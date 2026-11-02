@@ -1,0 +1,420 @@
+{
+ "S05": {
+  "title": "Multicentric study to evaluate the effectiveness of Thermalytix as compared with standard screening modalities in subjects who show possible symptoms of suspected breast cancer.",
+  "tool": "Thermalytix (Niramai)",
+  "type": "paper",
+  "ids": [
+   "CTRI/2017/10/010115"
+  ]
+ },
+ "S07": {
+  "title": "A real world evaluation of an innovative artificial intelligence tool for population-level breast cancer screening.",
+  "tool": "Thermalytix (Niramai)",
+  "type": "paper",
+  "ids": []
+ },
+ "S22": {
+  "title": "Robust Estimation of Breast Cancer Incidence Risk in Presence of Incomplete or Inaccurate Information.",
+  "tool": "Thermalytix (Niramai)",
+  "type": "paper",
+  "ids": []
+ },
+ "S23": {
+  "title": "Personalized risk prediction for breast cancer pre-screening using artificial intelligence and thermal radiomics.",
+  "tool": "Thermalytix (Niramai)",
+  "type": "paper",
+  "ids": []
+ },
+ "S24": {
+  "title": "Observational Study to Evaluate the Clinical Efficacy of Thermalytix for Detecting Breast Cancer in Symptomatic and Asymptomatic Women.",
+  "tool": "Thermalytix (Niramai)",
+  "type": "paper",
+  "ids": []
+ },
+ "S25": {
+  "title": "A prospective evaluation of breast thermography enhanced by a novel machine learning technique for screening breast abnormalities in a general population of women presenting to a secondary care hospital.",
+  "tool": "Thermalytix (Niramai)",
+  "type": "paper",
+  "ids": [
+   "NCT04688086"
+  ]
+ },
+ "S32": {
+  "title": "A Prospective Study to Evaluate the Effectiveness of Thermalytix (AI-based Thermographic Solution Developed by Niramai) for Breast Cancer Screening as Compared to Standard Screening Modalities for Breast Cancer (NCT04688086)",
+  "tool": "Thermalytix (Niramai)",
+  "type": "trial_registration",
+  "ids": [
+   "NCT04688086"
+  ]
+ },
+ "S34": {
+  "title": "A Safe and Non-invasive Breast Cancer Screening Solution",
+  "tool": "Thermalytix (Niramai)",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2017/10/010115"
+  ]
+ },
+ "S38": {
+  "title": "AI based screening for breast cancer",
+  "tool": "Thermalytix (Niramai)",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2025/07/090943"
+  ]
+ },
+ "S42": {
+  "title": "Evauation of a new tool for early detection of breast cancer",
+  "tool": "Thermalytix (Niramai)",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2019/07/020450"
+  ]
+ },
+ "S44": {
+  "title": "Thermography-based breast cancer screening using a measure of symmetry",
+  "tool": "Thermalytix (Niramai)",
+  "type": "patent",
+  "ids": []
+ },
+ "S45": {
+  "title": "Software interface tool for breast cancer screening",
+  "tool": "Thermalytix (Niramai)",
+  "type": "patent",
+  "ids": []
+ },
+ "S46": {
+  "title": "Software tool for breast cancer screening",
+  "tool": "Thermalytix (Niramai)",
+  "type": "patent",
+  "ids": []
+ },
+ "S48": {
+  "title": "Niramai\u2019s AI is Redefining Breast Cancer Screening -",
+  "tool": "Thermalytix (Niramai)",
+  "type": "web_page",
+  "ids": []
+ },
+ "S49": {
+  "title": "Thermalytix: AI-Powered Breast Cancer Screening Test",
+  "tool": "Thermalytix (Niramai)",
+  "type": "web_page",
+  "ids": []
+ },
+ "S50": {
+  "title": "FAQs: NIRAMAI Thermalytix | Breast Cancer Screening",
+  "tool": "Thermalytix (Niramai)",
+  "type": "web_page",
+  "ids": []
+ },
+ "S01": {
+  "title": "Accuracy of the AI-Based Smart Scope\u00ae Test as a Point-of-Care Screening and Triage Tool Compared to Colposcopy: A Pilot Study.",
+  "tool": "Smart Scope (Periwinkle)",
+  "type": "paper",
+  "ids": [
+   "CTRI/2022/04/041568"
+  ]
+ },
+ "S02": {
+  "title": "Revolutionizing Community-Based Cervical Cancer Screening: Evaluating an Indigenous Artificial Intelligence-Enabled Portable Colposcope.",
+  "tool": "Smart Scope (Periwinkle)",
+  "type": "paper",
+  "ids": [
+   "CTRI/2023/02/049936"
+  ]
+ },
+ "S06": {
+  "title": "Bringing Cervical Cancer Screening Closer to Women: Feasibility of Artificial Intelligence and Remote Assessment in Primary Health Care.",
+  "tool": "Smart Scope (Periwinkle)",
+  "type": "paper",
+  "ids": [
+   "CTRI/2023/07/055002"
+  ]
+ },
+ "S08": {
+  "title": "A Prospective Study to Assess the Utility of Artificial Intelligence-driven Cervical Screening Using Smart Scope versus Conventional Method.",
+  "tool": "Smart Scope (Periwinkle)",
+  "type": "paper",
+  "ids": []
+ },
+ "S21": {
+  "title": "Accuracy of the AI-Based Smart Scope\u00ae Test as a Point-of-Care Screening and Triage Tool Compared to Colposcopy: A Pilot Study.",
+  "tool": "Smart Scope (Periwinkle)",
+  "type": "paper",
+  "ids": [
+   "CTRI/2022/04/041568"
+  ]
+ },
+ "S28": {
+  "title": "Automated assessment of cervical health to determine further course of action using digital device Smart Scope at  PHC level",
+  "tool": "Smart Scope (Periwinkle)",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2023/07/055002"
+  ]
+ },
+ "S31": {
+  "title": "Comparison of Smart Scope AI test with cytology test for single visit cervical cancer screening.",
+  "tool": "Smart Scope (Periwinkle)",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2026/02/103860"
+  ]
+ },
+ "S40": {
+  "title": "Cervical cancer screening using Smart Scope in primary health centers",
+  "tool": "Smart Scope (Periwinkle)",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2022/10/046849"
+  ]
+ },
+ "S41": {
+  "title": "Assessment of Accuracy of Smart Scope Screening device for Cervical Cancer",
+  "tool": "Smart Scope (Periwinkle)",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2025/08/092500"
+  ]
+ },
+ "S43": {
+  "title": "Evaluation of machine learning model for auto assessment of cervical health using Smart Scope",
+  "tool": "Smart Scope (Periwinkle)",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2019/09/021261"
+  ]
+ },
+ "S47": {
+  "title": "Cervical Health For A Lifetime - The Indian Smart Scope Innovation As A Key Tool For Early Cancer Detection - Health Policy Watch",
+  "tool": "Smart Scope (Periwinkle)",
+  "type": "web_page",
+  "ids": []
+ },
+ "S04": {
+  "title": "Real-world data of CanAssist Breast- first immunohistochemistry and AI-based prognostic test.",
+  "tool": "CanAssist Breast (OncoStem)",
+  "type": "paper",
+  "ids": []
+ },
+ "S13": {
+  "title": "Development of a Novel Proteomic Risk-Classifier for Prognostication of Patients With Early-Stage Hormone Receptor-Positive Breast Cancer.",
+  "tool": "CanAssist Breast (OncoStem)",
+  "type": "paper",
+  "ids": []
+ },
+ "S14": {
+  "title": "Analytical validation of CanAssist-Breast: an immunohistochemistry based prognostic test for hormone receptor positive breast cancer patients.",
+  "tool": "CanAssist Breast (OncoStem)",
+  "type": "paper",
+  "ids": []
+ },
+ "S15": {
+  "title": "Clinical validation of an immunohistochemistry-based CanAssist-Breast test for distant recurrence prediction in hormone receptor-positive breast cancer patients.",
+  "tool": "CanAssist Breast (OncoStem)",
+  "type": "paper",
+  "ids": []
+ },
+ "S16": {
+  "title": "The usefulness of CanAssist breast in the assessment of recurrence risk in patients of ethnic Indian origin.",
+  "tool": "CanAssist Breast (OncoStem)",
+  "type": "paper",
+  "ids": []
+ },
+ "S17": {
+  "title": "A retrospective validation of CanAssist Breast in European early-stage breast cancer patient cohort.",
+  "tool": "CanAssist Breast (OncoStem)",
+  "type": "paper",
+  "ids": []
+ },
+ "S18": {
+  "title": "Ten-year distant-recurrence risk prediction in breast cancer by CanAssist Breast (CAB) in Dutch sub-cohort of the randomized TEAM trial.",
+  "tool": "CanAssist Breast (OncoStem)",
+  "type": "paper",
+  "ids": [
+   "NCT00032136",
+   "NCT00036270",
+   "NCT00279448"
+  ]
+ },
+ "S19": {
+  "title": "Real-world data of CanAssist Breast- first immunohistochemistry and AI-based prognostic test.",
+  "tool": "CanAssist Breast (OncoStem)",
+  "type": "paper",
+  "ids": []
+ },
+ "S20": {
+  "title": "Validation of CanAssist Breast immunohistochemistry biomarkers on an automated platform and its applicability in tissue microarray.",
+  "tool": "CanAssist Breast (OncoStem)",
+  "type": "paper",
+  "ids": []
+ },
+ "S54": {
+  "title": "OncoStem eyes wider access to breast cancer risk test with hospital-use kit | Health News - Business Standard",
+  "tool": "CanAssist Breast (OncoStem)",
+  "type": "web_page",
+  "ids": []
+ },
+ "S58": {
+  "title": "Sapien Biosciences and OncoStem Diagnostics collaborate to launch CanAssist-Breast, a Breast cancer recurrence prediction test &#8211; Sapien Biosciences",
+  "tool": "CanAssist Breast (OncoStem)",
+  "type": "web_page",
+  "ids": []
+ },
+ "S09": {
+  "title": "A demonstration of automated visual evaluation of cervical images taken with a smartphone camera.",
+  "tool": "AVE (NCI - IARC)",
+  "type": "paper",
+  "ids": []
+ },
+ "S10": {
+  "title": "Internal validation of Automated Visual Evaluation (AVE) on smartphone images for cervical cancer screening in a prospective study in Zambia.",
+  "tool": "AVE (NCI - IARC)",
+  "type": "paper",
+  "ids": []
+ },
+ "S11": {
+  "title": "Design of the HPV-automated visual evaluation (PAVE) study: Validating a novel cervical screening strategy.",
+  "tool": "AVE (NCI - IARC)",
+  "type": "paper",
+  "ids": []
+ },
+ "S12": {
+  "title": "The development of \"automated visual evaluation\" for cervical cancer screening: The promise and challenges in adapting deep-learning for clinical testing: Interdisciplinary principles of automated visual evaluation in cervical screening.",
+  "tool": "AVE (NCI - IARC)",
+  "type": "paper",
+  "ids": []
+ },
+ "S36": {
+  "title": "Systematic and Automated Visual Evaluation of cervix",
+  "tool": "AVE (NCI - IARC)",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2026/08/115386"
+  ]
+ },
+ "S03": {
+  "title": "Diagnostic Efficacy of Enhanced Visual Assessment [Visual Check] for Triaging Cervical Cancer Screen Positive Women.",
+  "tool": "EVA VisualCheck (MobileODT)",
+  "type": "paper",
+  "ids": []
+ },
+ "S52": {
+  "title": "Improving Women&#8217;s Health: MobileODT Joins Liger Medical",
+  "tool": "EVA VisualCheck (MobileODT)",
+  "type": "web_page",
+  "ids": []
+ },
+ "S53": {
+  "title": "FemTech Company MobileODT awarded prestigious National Cancer Institute (NCI) SBIR grant of $2.3 million",
+  "tool": "EVA VisualCheck (MobileODT)",
+  "type": "web_page",
+  "ids": []
+ },
+ "S62": {
+  "title": "Eva Visualcheck AI | MobileODT",
+  "tool": "EVA VisualCheck (MobileODT)",
+  "type": "web_page",
+  "ids": []
+ },
+ "S33": {
+  "title": "Cervical Carcinoma screening tool",
+  "tool": "CervAstra (Aindra)",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2017/06/008862"
+  ]
+ },
+ "S55": {
+  "title": "IIT Mandi Develop AI-Powered Device To Screen Cervical Cancer - BW Education",
+  "tool": "CervAstra (Aindra)",
+  "type": "web_page",
+  "ids": []
+ },
+ "S56": {
+  "title": "Startup of the Week: Advocating early diagnosis &amp; screening for cervical cancer with AI",
+  "tool": "CervAstra (Aindra)",
+  "type": "web_page",
+  "ids": []
+ },
+ "S61": {
+  "title": "AINDRA1 | Home",
+  "tool": "CervAstra (Aindra)",
+  "type": "web_page",
+  "ids": []
+ },
+ "S29": {
+  "title": "Artificial Intelligence Approach to Early Detection of Breast and Cervical Cancers in Indian Patients.",
+  "tool": "AIIMS New Delhi",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2024/04/065171"
+  ]
+ },
+ "S51": {
+  "title": "AIIMS-Delhi develops AI-based tool for breast cancer screening - The Tribune",
+  "tool": "AIIMS New Delhi",
+  "type": "web_page",
+  "ids": []
+ },
+ "S59": {
+  "title": "AI analyses mammograms for early stage breast cancer detection",
+  "tool": "MammoAssist (Telerad Tech)",
+  "type": "web_page",
+  "ids": []
+ },
+ "S60": {
+  "title": "Lord&amp;#8217;s Mark Advances AI-Powered Breast Cancer Screening Technology Towards Final Clinical Trials Across USA, Great Britain and Europe",
+  "tool": "Lord's Mark Industries",
+  "type": "web_page",
+  "ids": []
+ },
+ "S26": {
+  "title": "Relationship of established risk factors with breast cancer subtypes.",
+  "tool": "No AI tool named",
+  "type": "paper",
+  "ids": []
+ },
+ "S27": {
+  "title": "Automated vascular analysis of breast thermograms with interpretable features.",
+  "tool": "Thermalytix",
+  "type": "paper",
+  "ids": []
+ },
+ "S30": {
+  "title": "CTRI/2025/07/091016: Mammography AI for Identifying Abnormalities",
+  "tool": "AIIMS mammography AI (licensed to BPL Technologies)",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2025/07/091016"
+  ]
+ },
+ "S35": {
+  "title": "Not reported",
+  "tool": "Thermalytix",
+  "type": "trial_registration",
+  "ids": []
+ },
+ "S37": {
+  "title": "CTRI/2019/12/022368: Comparative performance evaluation of Artificial Intelligence (AI) based visual",
+  "tool": "Smart Scope CX (AI-assisted VIA/VILI)",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2019/12/022368"
+  ]
+ },
+ "S39": {
+  "title": "CTRI/2026/06/112367: Artificial intelligence-based tool for early detection of cervical cancer using Pap smear and colposcopy images",
+  "tool": "MedXAI cervical AI (Pap smear + colposcopy)",
+  "type": "trial_registration",
+  "ids": [
+   "CTRI/2026/06/112367"
+  ]
+ },
+ "S57": {
+  "title": "Not reported",
+  "tool": "AI thermal breast screening (vendor not named in source)",
+  "type": "web_page",
+  "ids": []
+ }
+}
