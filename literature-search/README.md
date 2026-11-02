@@ -42,3 +42,24 @@ python3 scripts/build_xlsx.py data/screened.json literature_search_results.xlsx 
 ```
 
 Step 1 needs the extraction workbook (not included here); skip it to reuse `data/existing.json`.
+
+## Verification search (2 Nov 2026)
+
+A second search, in `verification/`, checks that the first one missed nothing. It lists **only records not found by
+search 1 and not already in the library**.
+
+| Strategy | What it does |
+|---|---|
+| A. Name variants | Europe PMC with alternative spellings (SmartScope, Smart-Scope, Niramai Health Analytix, Aindra Systems, UE Life Sciences, ...) |
+| B. Semantic Scholar / OpenAlex | Not run: both APIs were rate-limited from the cloud session. Re-run `search2.py` from a personal connection or with free API keys |
+| C. Citation chasing | Forward citations and reference lists of every known paper (Europe PMC), keeping titles that name a tool |
+| D. Topic search | AI + breast/cervical screening + India, not tied to tool names (Europe PMC, ClinicalTrials.gov, WHO ICTRP CTRI records) |
+
+Findings:
+
+- The literature was well covered: only 7 new records name a tool (conference papers, a book chapter, one CTRI trial).
+- The trial registries were the gap. A CTRI trial of MobileODT's AI (registered as "Mobile ODT") was missed by search 1.
+- Indian AI screening tools registered in CTRI but not on the tool list are in the **Candidate new tools** sheet. PredAID-CERVIA (three 2022 trials) is the strongest.
+
+To re-run: `python3 scripts/search2.py verification/data/raw_results2.json data/screened.json data/existing.json`,
+then `compare2.py` and `build_xlsx2.py`.
