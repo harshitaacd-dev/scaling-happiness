@@ -102,6 +102,7 @@ if __name__ == "__main__":
                 r["text_file"] = path.name
                 r.setdefault("fulltext_status", "ok: saved earlier")
                 continue
+            print(f"{tool_id[:30]:30s} fetching...                              {r['title'][:60]}", flush=True)
             text, status = fetch(r)
             r["fulltext_status"] = status
             if text:

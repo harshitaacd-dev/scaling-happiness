@@ -3,6 +3,7 @@ import html
 import json
 import os
 import re
+import threading
 import time
 from pathlib import Path
 
@@ -30,16 +31,29 @@ HTTP = requests.Session()
 HTTP.headers["User-Agent"] = "academic-literature-audit/1.0 (research; contact via repository)"
 
 
-def http_get(url, tries=5, **kw):
+def _get_in_thread(url, kw, box):
+    try:
+        box["r"] = requests.get(url, timeout=(10, 30), headers=HTTP.headers, **kw)
+    except Exception as e:  # reported to the caller as a failed attempt
+        box["e"] = e
+
+
+def http_get(url, tries=3, deadline=90, **kw):
+    """GET with a hard wall-clock limit per attempt, so a slow or stalled website cannot hang the run.
+
+    Each attempt runs in a background thread; if it has not finished within `deadline` seconds it is
+    abandoned. Returns a requests.Response or None.
+    """
     for i in range(tries):
-        try:
-            r = HTTP.get(url, timeout=90, **kw)
-            if r.status_code == 429 or r.status_code >= 500:
-                time.sleep(2 ** (i + 1))
-                continue
-            return r
-        except requests.RequestException:
-            time.sleep(2 ** (i + 1))
+        box = {}
+        t = threading.Thread(target=_get_in_thread, args=(url, kw, box), daemon=True)
+        t.start(); t.join(deadline)
+        r = box.get("r")
+        if t.is_alive() or r is None:
+            time.sleep(2 ** (i + 1)); continue
+        if r.status_code == 429 or r.status_code >= 500:
+            time.sleep(2 ** (i + 1)); continue
+        return r
     return None
 
 
