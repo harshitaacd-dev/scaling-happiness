@@ -34,7 +34,7 @@ def tool_sources(tid, recs):
     rows = []
     for r in recs:
         p = DATA / "extractions" / f"{r.get('source_id')}.json"
-        if r.get("source_id") and p.exists():
+        if r.get("source_id") and p.exists() and r.get("decision") in ("Include", "Borderline"):
             e = json.loads(p.read_text())
             rows.append((r, e))
     rows.sort(key=lambda x: (type_rank(x[1]["source_type"]), str(x[1]["year"])))
@@ -48,7 +48,7 @@ def tool_sources(tid, recs):
         out.append(dict(company=e["company"], tool=e["ai_tool"], type=e["source_type"], title=e["title"] or r["title"], authors=e["authors"],
                         year=e["year"], file=file_used, same="; ".join(same) or None,
                         notes=f"{e['extraction_notes']} Full text: {r.get('fulltext_status', '')}. Unverified quotes: {e['_unverified_quotes']}.",
-                        dp=e["_rendered"]["dp"], items=e["_rendered"]["items"]))
+                        dp=e["_rendered"]["dp"], items=e["_rendered"]["items"], sid=r["source_id"]))
     return out
 
 
@@ -81,7 +81,7 @@ def final_or_prelim(path, sheet, n):
 
 if __name__ == "__main__":
     rebuild = "--rebuild" in sys.argv
-    corpus = {t["tool_id"]: t for t in csv.DictReader(open(DATA / "corpus.csv"))}
+    corpus = {t["tool_id"]: t for t in csv.DictReader(open(DATA / "corpus.csv", encoding="utf-8-sig"))}
     sources = load("sources.json")
     summary = []
     for tid, recs in sources.items():
@@ -90,10 +90,14 @@ if __name__ == "__main__":
         missing = [[f"{r['title']} ({r.get('trial_id') or r.get('doi') or r.get('url', '')})", r.get("fulltext_status", "")]
                    for r in recs if r.get("decision") in ("Include", "Borderline") and not r.get("text_file")]
         co = t["company"].split("/")[0].strip()
+        sno = {x["sid"]: k + 1 for k, x in enumerate(srcs)}
+        title_of = {x["sid"]: x["title"] for x in srcs}
+        dups = [[f"{r['title']} ({r.get('url', '')})", f"No. {sno.get(r['duplicate_of'], '?')}: {title_of.get(r['duplicate_of'], r['duplicate_of'])}",
+                 "Same text as a source already in the workbook (republished copy)"] for r in recs if r.get("decision") == "Duplicate"]
         sheet = next((x for x in (f"{co} ({t['tool_name']})", f"{co.split()[0]} ({t['tool_name']})", t["tool_name"]) if len(x) <= 31), t["tool_name"])
         sheet = safe_sheet_name(sheet)
         fname = f"{tid}_extraction_table.xlsx"
-        spec = dict(sheet=sheet, file=fname, sources=srcs, dups=[], missing=missing, to_add=[], readme=readme(t, len(srcs), len(missing)))
+        spec = dict(sheet=sheet, file=fname, sources=srcs, dups=dups, missing=missing, to_add=[], readme=readme(t, len(srcs), len(missing)))
         if rebuild or not (OUT / fname).exists():
             build(spec, OUT)
         scores = final_or_prelim(OUT / fname, sheet, len(srcs)) if srcs else []

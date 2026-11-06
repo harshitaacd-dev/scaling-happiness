@@ -105,7 +105,7 @@ def key(r):
 
 
 if __name__ == "__main__":
-    tools = [t for t in csv.DictReader(open(DATA / "corpus.csv")) if t["include"].strip().lower() == "yes"]
+    tools = [t for t in csv.DictReader(open(DATA / "corpus.csv", encoding="utf-8-sig")) if t["include"].strip().lower() == "yes"]
     sources = load("sources.json", {}); log = load("search_log.json", [])
     for t in tools:
         if t["tool_id"] in sources:

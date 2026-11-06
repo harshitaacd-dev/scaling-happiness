@@ -95,9 +95,9 @@ def _safe(name, s):
 if __name__ == "__main__":
     import csv
     only = set(sys.argv[1:])
-    names = {t["tool_id"]: t["tool_name"] for t in csv.DictReader(open(DATA / "corpus.csv"))}
+    names = {t["tool_id"]: t["tool_name"] for t in csv.DictReader(open(DATA / "corpus.csv", encoding="utf-8-sig"))}
     sources = load("sources.json")
-    jobs = [(names.get(tid, tid), s) for tid, recs in sources.items() if not only or tid in only for s in recs if s.get("text_file")]
+    jobs = [(names.get(tid, tid), s) for tid, recs in sources.items() if not only or tid in only for s in recs if s.get("text_file") and s.get("decision") in ("Include", "Borderline")]
     print(f"{len(jobs)} sources to extract", flush=True)
     with ThreadPoolExecutor(max_workers=4) as pool:  # a few requests at a time
         for (name, s), res in zip(jobs, pool.map(lambda j: _safe(*j), jobs)):
