@@ -6,6 +6,7 @@ Texts are saved to data/texts/<source_id>.txt with '=== PAGE n ===' markers (PDF
 Paywalled papers: download them yourself (e.g. with your library proxy), put them in manual_pdfs/<tool_id>/ and re-run.
 A PDF in that folder is matched to a source by title; if none matches it is added as a new source.
 Output: data/sources.json updated with source_id, text_file, fulltext_status.
+Downloads run 8 at a time. Sources already marked missing are skipped on re-runs; add --retry-missing to try them again.
 """
 import io
 import re
@@ -77,7 +78,12 @@ def fetch(src):
 
 
 if __name__ == "__main__":
+    import sys
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    RETRY = "--retry-missing" in sys.argv
+    WORKERS = 8
     sources = load("sources.json")
+    todo = []
     for tool_id, recs in sources.items():
         # PDFs you added by hand
         for pdf in sorted((MANUAL / tool_id).glob("*.pdf")) if (MANUAL / tool_id).exists() else []:
@@ -97,19 +103,34 @@ if __name__ == "__main__":
             path = TEXTS / f"{r['source_id']}.txt"
             if "_text" in r:
                 path.write_text(r.pop("_text")); r["text_file"] = path.name; r["fulltext_status"] = "ok: manual PDF"
-                continue
-            if path.exists():  # saved by an earlier, interrupted run
+            elif path.exists():  # saved by an earlier, interrupted run
                 r["text_file"] = path.name
                 r.setdefault("fulltext_status", "ok: saved earlier")
-                continue
-            print(f"{tool_id[:30]:30s} fetching...                              {r['title'][:60]}", flush=True)
-            text, status = fetch(r)
+            elif r.get("fulltext_status", "").startswith(("missing", "failed")) and not RETRY:
+                pass  # already tried; use --retry-missing to try again
+            else:
+                todo.append((tool_id, r, path))
+    save("sources.json", sources)
+
+    # download several sources at once, so one slow website does not hold up the rest
+    print(f"{len(todo)} sources to download ({WORKERS} at a time)", flush=True)
+    done = 0
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        futures = {pool.submit(fetch, r): (tool_id, r, path) for tool_id, r, path in todo}
+        for fut in as_completed(futures):
+            tool_id, r, path = futures[fut]
+            try:
+                text, status = fut.result()
+            except Exception as e:  # one bad page must not stop the run
+                text, status = None, f"failed: {type(e).__name__}"
             r["fulltext_status"] = status
             if text:
                 path.write_text(text); r["text_file"] = path.name
-            print(f"{tool_id[:30]:30s} {status[:40]:40s} {r['title'][:60]}", flush=True)
-            save("sources.json", sources)
-        save("sources.json", sources)
+            done += 1
+            print(f"[{done}/{len(todo)}] {tool_id[:28]:28s} {status[:34]:34s} {r['title'][:55]}", flush=True)
+            if done % 10 == 0:
+                save("sources.json", sources)
+    save("sources.json", sources)
     n = sum(1 for v in sources.values() for r in v if r.get("text_file"))
     m = sum(1 for v in sources.values() for r in v if r.get("decision") in ("Include", "Borderline") and not r.get("text_file"))
     print(f"full texts: {n}; still missing: {m} (see data/sources.json, fulltext_status)")

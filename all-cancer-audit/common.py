@@ -38,7 +38,7 @@ def _get_in_thread(url, kw, box):
         box["e"] = e
 
 
-def http_get(url, tries=3, deadline=90, **kw):
+def http_get(url, tries=2, deadline=60, **kw):
     """GET with a hard wall-clock limit per attempt, so a slow or stalled website cannot hang the run.
 
     Each attempt runs in a background thread; if it has not finished within `deadline` seconds it is
