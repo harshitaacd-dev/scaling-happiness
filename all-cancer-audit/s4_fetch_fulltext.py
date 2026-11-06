@@ -98,13 +98,16 @@ if __name__ == "__main__":
             if "_text" in r:
                 path.write_text(r.pop("_text")); r["text_file"] = path.name; r["fulltext_status"] = "ok: manual PDF"
                 continue
-            if path.exists():
+            if path.exists():  # saved by an earlier, interrupted run
+                r["text_file"] = path.name
+                r.setdefault("fulltext_status", "ok: saved earlier")
                 continue
             text, status = fetch(r)
             r["fulltext_status"] = status
             if text:
                 path.write_text(text); r["text_file"] = path.name
             print(f"{tool_id[:30]:30s} {status[:40]:40s} {r['title'][:60]}", flush=True)
+            save("sources.json", sources)
         save("sources.json", sources)
     n = sum(1 for v in sources.values() for r in v if r.get("text_file"))
     m = sum(1 for v in sources.values() for r in v if r.get("decision") in ("Include", "Borderline") and not r.get("text_file"))
