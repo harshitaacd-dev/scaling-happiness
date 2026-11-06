@@ -19,6 +19,9 @@ from workbook import build
 
 OUT = ROOT / "output"; OUT.mkdir(exist_ok=True)
 DPS, ITEMS = template_labels()
+# Sensitivity check: tools kept in the corpus whose only public evidence is promotional (press release or launch
+# article). The comparison is reported with and without them. Matched on company name, case-insensitive.
+SENSITIVITY_EXCLUDE = ["lord's mark", "telerad"]
 TYPE_ORDER = ["paper", "preprint", "conference paper", "conference abstract", "book chapter", "case report", "trial registration", "patent", "magazine feature", "web page"]
 
 
@@ -66,7 +69,9 @@ def readme(t, n, missing):
 
 def final_or_prelim(path, sheet, n):
     """Per-source item scores from an existing workbook: Final score where entered, else Preliminary."""
-    wb = openpyxl.load_workbook(path, data_only=True); ws = wb[sheet]
+    wb = openpyxl.load_workbook(path, data_only=True)
+    known = {"Scoring table", "Sources to add", "Duplicates removed", "Missing full text", "Read me"}
+    ws = wb[sheet] if sheet in wb.sheetnames else next(w for w in wb.worksheets if w.title not in known)
     scores = []
     for k in range(n):
         cf, cp = 3 + 4 * k + 2, 3 + 4 * k + 3
@@ -105,28 +110,35 @@ if __name__ == "__main__":
         t = s["t"]
         ws.append([t["tool_name"], t["company"], t["cancer_types"], t["sex_group"], t["purpose"], s["n"], s["missing"], s["total"],
                    round(s["total"] / 58, 3), sum(x > 0 for x in s["items"])] + s["items"])
+    def group_table(sheet, rows_in, title):
+        groups = defaultdict(list)
+        for s_ in rows_in:
+            if s_["n"]:
+                groups[s_["t"]["sex_group"]].append(s_)
+        order = [k for k in ("women-specific", "men-specific", "all") if k in groups]
+        sheet.append([title] + order)
+        sheet.append(["Tools with at least one extracted source"] + [len(groups[k]) for k in order])
+        sheet.append(["Mean total score (of 58)"] + [round(statistics.mean(x["total"] for x in groups[k]), 1) for k in order])
+        sheet.append(["Median total score (of 58)"] + [statistics.median(x["total"] for x in groups[k]) for k in order])
+        sheet.append(["Mean items reported (of 29)"] + [round(statistics.mean(sum(v > 0 for v in x["items"]) for x in groups[k]), 1) for k in order])
+        sheet.append([])
+        sheet.append(["% of tools reporting each item (score > 0)"] + order)
+        for i, (_, lab) in enumerate(ITEMS):
+            sheet.append([lab] + [round(sum(x["items"][i] > 0 for x in groups[k]) / len(groups[k]), 2) for k in order])
+
     g = wb.create_sheet("Group comparison")
-    groups = defaultdict(list)
-    for s in summary:
-        if s["n"]:
-            groups[s["t"]["sex_group"]].append(s)
-    order = [k for k in ("women-specific", "men-specific", "all") if k in groups]
-    g.append(["Measure"] + order)
-    g.append(["Tools with at least one extracted source"] + [len(groups[k]) for k in order])
-    g.append(["Mean total score (of 58)"] + [round(statistics.mean(s["total"] for s in groups[k]), 1) for k in order])
-    g.append(["Median total score (of 58)"] + [statistics.median(s["total"] for s in groups[k]) for k in order])
-    g.append(["Mean items reported (of 29)"] + [round(statistics.mean(sum(x > 0 for x in s["items"]) for s in groups[k]), 1) for k in order])
-    g.append([])
-    g.append(["% of tools reporting each item (score > 0)"] + order)
-    for i, (_, lab) in enumerate(ITEMS):
-        g.append([lab] + [round(sum(s["items"][i] > 0 for s in groups[k]) / len(groups[k]), 2) for k in order])
+    group_table(g, summary, "All included tools")
+    excl = [s_ for s_ in summary if any(e in s_["t"]["company"].lower() for e in SENSITIVITY_EXCLUDE)]
+    sg = wb.create_sheet("Sensitivity check")
+    group_table(sg, [s_ for s_ in summary if s_ not in excl], "Excluding promotional-only tools: " + ", ".join(x["t"]["tool_name"] for x in excl))
     n = wb.create_sheet("Read me")
     for l in ["Tool-level score per item = the highest score that item reaches in any of the tool's public sources (Final score where you entered one, otherwise Claude's preliminary score).",
               "Groups: women-specific = breast, cervical, ovarian, uterine cancers; men-specific = prostate, testicular; all = cancers that affect everyone.",
               "Tool numbers per group are small, so compare descriptively; differences may also reflect company size, regulation or the number of sources.",
+              "'Sensitivity check' repeats the comparison without the tools whose only public evidence is promotional (see SENSITIVITY_EXCLUDE in s6_build_workbooks.py). Report both.",
               "Re-run 'python s6_build_workbooks.py' after entering Final scores to refresh this comparison."]:
         n.append([l])
-    for sh in (ws, g):
+    for sh in (ws, g, sg):
         for c in sh[1]: c.font = H; c.fill = HF; c.alignment = Alignment(wrap_text=True, vertical="top")
         sh.column_dimensions["A"].width = 45; sh.freeze_panes = "B2"
     n.column_dimensions["A"].width = 140
