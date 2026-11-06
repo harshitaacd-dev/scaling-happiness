@@ -6,3 +6,4 @@ cancer screening tools deployed in India are about their data, scored against th
 ## Folders
 
 - [`literature-search/`](literature-search/): reproducible search for papers and trial registrations on each tool (2 Nov 2026).
+- [`extraction-tables/`](extraction-tables/): one STANDING Together extraction workbook per tool, in the Niramai format.
