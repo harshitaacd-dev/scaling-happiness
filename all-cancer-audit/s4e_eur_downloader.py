@@ -226,7 +226,7 @@ def main():
                 print(f"Type this address into the browser window yourself:  https://{PROXY_HOST}/login")
             print("\nThe browser now shows either the EUR sign-in page or, if you are still logged in, the first article.")
             input("Log in there if asked, then come back HERE and press Enter to start downloading... ")
-        saved = 0
+        saved, captchas = 0, 0
         for i, row in enumerate(rows[: args.max], 1):
             dest = ROOT / row["save_in_folder"] / row["save_as"]
             dest.parent.mkdir(parents=True, exist_ok=True)
@@ -267,10 +267,27 @@ def main():
                     data = try_links(context, [page.url])
                 text = page.locator("body").inner_text(timeout=5000)[:5000] if not data else ""
                 if BLOCK_SIGNS.search(text):
-                    print("\nThe publisher is showing a block or captcha page. Stopping to protect your library access.")
-                    print("Solve it in the window if you like, wait a few hours, then run the script again.")
-                    log(row, "stopped: block/captcha page")
-                    break
+                    captchas += 1
+                    if args.no_login_wait or captchas > 1:
+                        print("\nThe publisher is showing a block or captcha page" + (" again" if captchas > 1 else "") +
+                              ". Stopping for today to protect your library access; run the script again tomorrow.")
+                        log(row, "stopped: block/captcha page")
+                        break
+                    print("\n   The publisher is showing a captcha / 'are you human' check.")
+                    answer = input("   Solve it in the browser window, then press Enter to continue (or type q and Enter to stop): ").strip().lower()
+                    if answer == "q":
+                        log(row, "stopped by you at captcha"); break
+                    page = live_page(context, page)
+                    page.wait_for_timeout(2000)
+                    try:
+                        text = page.locator("body").inner_text(timeout=5000)[:5000]
+                    except Exception:
+                        text = ""
+                    if BLOCK_SIGNS.search(text):
+                        print("   The check is still showing. Stopping for today; run the script again tomorrow.")
+                        log(row, "stopped: block/captcha page"); break
+                    if len(downloads) > n0:
+                        data = download_bytes(downloads[-1])
                 if not data:
                     data = try_links(context, find_pdf_links(page))
                 if not data and args.assist_seconds:
