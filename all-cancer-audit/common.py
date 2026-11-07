@@ -112,7 +112,7 @@ def ask_json(system, content, schema, effort="medium", max_tokens=64000):
         max_tokens=max_tokens,
         betas=[FALLBACK_BETA],
         fallbacks="default",  # re-runs on a fallback model if the request is declined
-        system=system,
+        system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],  # same for every source: cached
         messages=[{"role": "user", "content": content}],
         output_config={"effort": effort, "format": {"type": "json_schema", "schema": schema}},
     ) as stream:
@@ -148,6 +148,31 @@ def template_labels():
     dps = [ws.cell(r, 2).value for r in range(13, 23)]
     items = [(ws.cell(r, 1).value, ws.cell(r, 2).value) for r in range(26, 55)]
     return dps, items
+
+
+def calibration_examples(per_score=2, max_len=220):
+    """Scoring standard taken from the Niramai reference table: for each of the 29 items, short examples of what was
+    scored 2 and 1 there (value and quote), preferring examples from different source types."""
+    ws = openpyxl.load_workbook(TEMPLATE)["Niramai (Thermalytix)"]
+    lines = []
+    for i, r in enumerate(range(26, 55)):
+        label = ws.cell(r, 2).value
+        block = [f"it{i + 1:02d} {label}"]
+        for score in (2, 1):
+            seen_types, n = set(), 0
+            for k in range(50):
+                c0 = 3 + 4 * k
+                v, q, sc = ws.cell(r, c0).value, ws.cell(r, c0 + 1).value, ws.cell(r, c0 + 3).value
+                stype = (ws.cell(4, c0).value or "").split(" ")[0].lower()
+                if sc != score or not v or str(v).startswith("Not reported") or stype in seen_types:
+                    continue
+                seen_types.add(stype); n += 1
+                quote = re.sub(r"\s+", " ", str(q or ""))[:max_len]
+                block.append(f"   scored {score} ({stype}): {re.sub(r'\s+', ' ', str(v))[:max_len]} | quote: {quote}")
+                if n >= per_score:
+                    break
+        lines.append("\n".join(block))
+    return "\n".join(lines)
 
 
 def safe_sheet_name(s):

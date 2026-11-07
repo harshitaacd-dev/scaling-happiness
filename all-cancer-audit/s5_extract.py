@@ -8,7 +8,7 @@ import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
-from common import DATA, ask_json, load, template_labels
+from common import DATA, ask_json, calibration_examples, load, template_labels
 
 EXT = DATA / "extractions"; EXT.mkdir(exist_ok=True)
 DPS, ITEMS = template_labels()
@@ -48,7 +48,14 @@ for items, score must be 0, 1 or 2.
 
 DATA POINTS (Table 1, descriptive):
 """ + "\n".join(f"dp{i + 1:02d}: {d}" for i, d in enumerate(DPS)) + "\n\nSTANDING TOGETHER ITEMS (Table 2, scored):\n" + \
-    "\n".join(f"it{i + 1:02d}: {s.split(' — ')[0]} | {lab}" for i, (s, lab) in enumerate(ITEMS))
+    "\n".join(f"it{i + 1:02d}: {s.split(' — ')[0]} | {lab}" for i, (s, lab) in enumerate(ITEMS)) + """
+
+SCORING STANDARD (calibration). Score exactly as in the reference audit of another tool (Niramai Thermalytix), from which
+the examples below are taken. In that audit, a source earned 1 whenever it gave any relevant information on the item,
+even brief, partial or only about the evaluation data; 2 when it described the item clearly for the data it reports on;
+0 only when the item is not addressed at all. Apply the same threshold to every source type (papers, abstracts,
+registrations, patents, web pages). Do not be stricter or more lenient than these examples:
+""" + calibration_examples()
 
 
 def squash(s):
