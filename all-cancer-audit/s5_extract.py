@@ -13,20 +13,19 @@ from common import DATA, ask_json, load, template_labels
 EXT = DATA / "extractions"; EXT.mkdir(exist_ok=True)
 DPS, ITEMS = template_labels()
 
-FIELD = {"type": "object", "properties": {
+HEADER = ["company", "ai_tool", "source_type", "title", "authors", "year", "registration_ids", "extraction_notes"]
+DP_IDS = [f"dp{i + 1:02d}" for i in range(len(DPS))]
+IT_IDS = [f"it{i + 1:02d}" for i in range(len(ITEMS))]
+# One entry shape repeated in a list keeps the output grammar small (39 separately named fields was too large for the API).
+ENTRY = {"type": "object", "properties": {
+    "id": {"type": "string"},
     "value": {"type": "string"},
     "quotes": {"type": "array", "items": {"type": "object", "properties": {"text": {"type": "string"}, "page": {"type": "string"}},
-                                          "required": ["text", "page"], "additionalProperties": False}}},
-    "required": ["value", "quotes"], "additionalProperties": False}
-SCORED = {"type": "object", "properties": {**FIELD["properties"], "score": {"type": "integer", "enum": [0, 1, 2]}},
-          "required": ["value", "quotes", "score"], "additionalProperties": False}
-HEADER = ["company", "ai_tool", "source_type", "title", "authors", "year", "registration_ids", "extraction_notes"]
-SCHEMA = {"type": "object", "properties": {
-    **{h: {"type": "string"} for h in HEADER},
-    **{f"dp{i + 1:02d}": FIELD for i in range(len(DPS))},
-    **{f"it{i + 1:02d}": SCORED for i in range(len(ITEMS))}},
-    "required": HEADER + [f"dp{i + 1:02d}" for i in range(len(DPS))] + [f"it{i + 1:02d}" for i in range(len(ITEMS))],
-    "additionalProperties": False}
+                                          "required": ["text", "page"], "additionalProperties": False}},
+    "score": {"type": "integer"}},
+    "required": ["id", "value", "quotes", "score"], "additionalProperties": False}
+SCHEMA = {"type": "object", "properties": {**{h: {"type": "string"} for h in HEADER}, "entries": {"type": "array", "items": ENTRY}},
+          "required": HEADER + ["entries"], "additionalProperties": False}
 
 SYSTEM = f"""You extract evidence for a transparency audit of AI cancer tools against the STANDING Together recommendations
 (29 items on the documentation and use of health datasets). Work only from the source text given; use no outside knowledge.
@@ -44,6 +43,8 @@ or "web page, no page numbers" / "no page numbers" when the text has no page mar
 Score key for the 29 items: 0 = no information, 1 = partial information, 2 = complete information. Score what is disclosed about the
 data used to develop or evaluate the tool, as the recommendation asks.
 If the text holds several abstracts (a journal supplement or abstract book), extract only the abstract(s) about the tool named below.
+Return "entries": exactly one entry for every id listed below (dp01-dp10 and it01-it29), in that order. For data points set score to 0;
+for items, score must be 0, 1 or 2.
 
 DATA POINTS (Table 1, descriptive):
 """ + "\n".join(f"dp{i + 1:02d}: {d}" for i, d in enumerate(DPS)) + "\n\nSTANDING TOGETHER ITEMS (Table 2, scored):\n" + \
@@ -76,9 +77,17 @@ def extract(tool_name, src):
     prompt = f"TOOL BEING AUDITED: {tool_name}\nSOURCE: {src['title']}\n\n<source_text>\n{text}\n</source_text>"
     out = ask_json(SYSTEM, prompt, SCHEMA, effort="high")
     sq = squash(text)
+    got = {e["id"].strip().lower(): e for e in out.pop("entries", [])}
+    missing = [i for i in DP_IDS + IT_IDS if i not in got]
+    for i in missing:  # never lose an item silently: fill it in and flag it
+        got[i] = {"value": "Not reported [check: item not returned by the extraction]", "quotes": [], "score": 0}
+    for i in IT_IDS:
+        if got[i]["score"] not in (0, 1, 2):
+            got[i]["value"] += f" [check: invalid score {got[i]['score']} set to 0]"; got[i]["score"] = 0
+    out["_missing_items"] = missing
     out["_rendered"] = {
-        "dp": [[out[f"dp{i + 1:02d}"]["value"], render(out[f"dp{i + 1:02d}"], sq)] for i in range(len(DPS))],
-        "items": [[out[f"it{i + 1:02d}"]["value"], render(out[f"it{i + 1:02d}"], sq), out[f"it{i + 1:02d}"]["score"]] for i in range(len(ITEMS))],
+        "dp": [[got[i]["value"], render(got[i], sq)] for i in DP_IDS],
+        "items": [[got[i]["value"], render(got[i], sq), got[i]["score"]] for i in IT_IDS],
     }
     out["_unverified_quotes"] = sum(str(c).count("[check:") for row in out["_rendered"]["dp"] + out["_rendered"]["items"] for c in row)
     path.write_text(__import__("json").dumps(out, indent=1, ensure_ascii=False))
