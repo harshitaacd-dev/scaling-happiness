@@ -224,7 +224,8 @@ def main():
             except Exception as e:
                 print(f"\nThe library page did not load ({str(e).splitlines()[0][:150]}).")
                 print(f"Type this address into the browser window yourself:  https://{PROXY_HOST}/login")
-            input("\nLog in to EUR in the browser window (if asked), then come back here and press Enter to start... ")
+            print("\nThe browser now shows either the EUR sign-in page or, if you are still logged in, the first article.")
+            input("Log in there if asked, then come back HERE and press Enter to start downloading... ")
         saved = 0
         for i, row in enumerate(rows[: args.max], 1):
             dest = ROOT / row["save_in_folder"] / row["save_as"]
