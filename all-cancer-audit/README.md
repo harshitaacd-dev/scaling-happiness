@@ -42,6 +42,7 @@ All model calls use Claude Opus 5.5 with a server-side fallback if a request is 
 | 4f | `python s4f_import_existing.py ~/Downloads/Niramai` | Copies PDFs you already have (matched by DOI or title) into place, so they are not downloaded again | `manual_pdfs/` |
 | **paywalled** | put PDFs in `manual_pdfs/<tool_id>/` | Download them with your library proxy, then re-run step 4 and step 4b | |
 | 5 | `python s5_extract.py` | Extracts Table 1 and the 29 items for every source; checks every quote against the text | `data/extractions/` |
+| 5r | `python s5r_repeatability.py` | Re-extracts a sample of 6 sources and reports test-retest agreement (exact %, kappa) for your methods | `data/repeatability.json` |
 | 6 | `python s6_build_workbooks.py` | One workbook per tool + `comparison_by_sex_group.xlsx` | `output/` |
 
 **Where are we?** `python status.py` shows, per tool and in total, what is found, downloaded, missing, extracted and built, and what to do next.

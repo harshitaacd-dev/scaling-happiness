@@ -50,6 +50,27 @@ DATA POINTS (Table 1, descriptive):
 """ + "\n".join(f"dp{i + 1:02d}: {d}" for i, d in enumerate(DPS)) + "\n\nSTANDING TOGETHER ITEMS (Table 2, scored):\n" + \
     "\n".join(f"it{i + 1:02d}: {s.split(' — ')[0]} | {lab}" for i, (s, lab) in enumerate(ITEMS)) + """
 
+ACCURACY RULES (apply to every entry):
+- The value may only state what the quoted passages show. Every fact or number in the value must appear in one of its quotes.
+  Do not infer, generalise or add details from elsewhere (e.g. do not write "age distribution" unless an age breakdown is quoted).
+- Prefer the source's own numbers and words. If the source only states eligibility criteria, say so; do not present them as results.
+- If the information is only implied, not stated, the item is "Not reported".
+
+DECISION RULES for items that are easy to score inconsistently:
+- Scope: score what the source discloses about ANY data used to develop or evaluate the tool (training, validation or test data),
+  as in the reference audit. State in the value which data it concerns (training data / evaluation data).
+- 1.1f Data shifts over time: only information about how the data or population changed over time, or when data were collected
+  across periods, counts. Statements that the model was locked, versioned or not updated do NOT count (score 0 for that alone).
+- Claims without supporting data (e.g. "diverse ethnic backgrounds", "representative population") with no numbers or breakdown
+  earn at most 1, for any item.
+- 1.2a Composition: 2 only if the composition of the study population is given by at least one demographic attribute (e.g. age
+  groups, sex, region, socio-economic group); a distribution of test results or diagnoses alone is 1.
+- 2.2d / 2.2e Performance by group: 2 only if performance (e.g. sensitivity/specificity) is reported separately for groups; a
+  mention that groups were included without separate results is 1 at most.
+- 2.4a Uncertainties and mitigation: 1 for a general call for further or larger studies; 2 only when specific risks or
+  uncertainties are named AND specific steps to address them are described.
+- When torn between two scores, choose the one the closest calibration example below supports, and say why in the value.
+
 SCORING STANDARD (calibration). Score exactly as in the reference audit of another tool (Niramai Thermalytix), from which
 the examples below are taken. In that audit, a source earned 1 whenever it gave any relevant information on the item,
 even brief, partial or only about the evaluation data; 2 when it described the item clearly for the data it reports on;
@@ -92,6 +113,19 @@ def extract(tool_name, src):
         if got[i]["score"] not in (0, 1, 2):
             got[i]["value"] += f" [check: invalid score {got[i]['score']} set to 0]"; got[i]["score"] = 0
     out["_missing_items"] = missing
+    # automatic checks: numbers in values must occur in the source; scores must fit what was found
+    nums_in_text = set(re.findall(r"\d+(?:\.\d+)?", text.replace(",", "")))
+    for i in DP_IDS + IT_IDS:
+        g = got[i]
+        if g["value"].startswith("Not reported"):
+            if i in IT_IDS and g["score"] > 0:
+                g["value"] += f" [check: scored {g['score']} although not reported]"
+            continue
+        absent = [n for n in re.findall(r"\d+(?:\.\d+)?", g["value"].replace(",", "")) if n not in nums_in_text]
+        if absent:
+            g["value"] += f" [check: number(s) {', '.join(absent[:4])} not found in source]"
+        if i in IT_IDS and g["score"] == 2 and not g["quotes"]:
+            g["value"] += " [check: scored 2 without a supporting quote]"
     out["_rendered"] = {
         "dp": [[got[i]["value"], render(got[i], sq)] for i in DP_IDS],
         "items": [[got[i]["value"], render(got[i], sq), got[i]["score"]] for i in IT_IDS],
