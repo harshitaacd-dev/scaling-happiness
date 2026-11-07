@@ -33,11 +33,13 @@ All model calls use Claude Opus 5.5 with a server-side fallback if a request is 
 | 2 | `python s2_build_corpus.py` | Merges everything into one classified, deduplicated tool list (sex group, purpose, status, search terms) | `data/corpus.csv` |
 | **review** | open `data/corpus.csv` | **Set `include` to yes/no for every tool.** Check sex group and purpose. Edit search terms if needed | |
 | 3 | `python s3_find_sources.py` | Europe PMC, PubMed, Crossref, ClinicalTrials.gov, WHO ICTRP + web search for company pages; screens with the Niramai rule | `data/sources.json`, `data/search_log.json` |
+| **4 (all in one)** | `python get_fulltexts.py` (add `--library firefox` to also use the EUR helper) | **Recommended.** Runs 4f, 4d, 4, 4b and 4c (and 4e) in the right order and prints a summary. Steps 4–4f below can also be run one by one | `data/texts/`, `data/missing_fulltexts.csv` |
 | 4 | `python s4_fetch_fulltext.py` | Downloads open-access full texts, trial records and web pages | `data/texts/`, updates `sources.json` |
 | 4b | `python s4b_remove_duplicates.py` | Removes republished copies of the same article (keeps the original) and non-English versions | updates `sources.json` |
 | 4c | `python s4c_missing_list.py` | Lists every source still without full text (and abstract-only pages), with library links and the exact file name to save | `data/missing_fulltexts.csv` |
 | 4d | `python s4d_unpaywall.py` | Finds free legal copies of missing papers via Unpaywall (set `UNPAYWALL_EMAIL` first) | updates `sources.json` |
 | 4e | `python s4e_eur_downloader.py` | Opens a browser on your computer; **you** log in to the EUR library; it saves the missing PDFs slowly (20–40 s apart, max 40 per run) and stops at any block/captcha page. Needs `pip install playwright` and `python -m playwright install chromium` once | `manual_pdfs/`, `data/eur_download_log.csv` |
+| 4f | `python s4f_import_existing.py ~/Downloads/Niramai` | Copies PDFs you already have (matched by DOI or title) into place, so they are not downloaded again | `manual_pdfs/` |
 | **paywalled** | put PDFs in `manual_pdfs/<tool_id>/` | Download them with your library proxy, then re-run step 4 and step 4b | |
 | 5 | `python s5_extract.py` | Extracts Table 1 and the 29 items for every source; checks every quote against the text | `data/extractions/` |
 | 6 | `python s6_build_workbooks.py` | One workbook per tool + `comparison_by_sex_group.xlsx` | `output/` |
