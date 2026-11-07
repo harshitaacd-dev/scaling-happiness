@@ -11,7 +11,7 @@ Library licences forbid fast bulk downloading, and publishers can block a whole 
 therefore waits 20-40 seconds between papers and stops after --max papers (default 40) per run. Please keep it so.
 
 Setup (once):   pip install playwright      then      python -m playwright install chromium
-Run:            python s4e_eur_downloader.py            (options: --max 40, --assist-seconds 90)
+Run:            python s4e_eur_downloader.py            (options: --max 40, --assist-seconds 90, --browser firefox|safari|chrome)
 Afterwards:     python s4_fetch_fulltext.py   then   python s4b_remove_duplicates.py   then   python s4c_missing_list.py
 """
 import argparse
@@ -148,6 +148,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--max", type=int, default=40, help="papers per run (keep it modest)")
     ap.add_argument("--assist-seconds", type=int, default=90, help="time to click the PDF button yourself when automatic finding fails (0 = never wait)")
+    ap.add_argument("--browser", default="chromium", choices=["chromium", "chrome", "firefox", "safari"],
+                    help="chromium (default), chrome (your installed Google Chrome), firefox, or safari (Safari's WebKit engine)")
     ap.add_argument("--headless", action="store_true", help=argparse.SUPPRESS)  # for testing only
     ap.add_argument("--no-login-wait", action="store_true", help=argparse.SUPPRESS)
     ap.add_argument("--chromium-path", default=None, help=argparse.SUPPRESS)  # testing on machines with a preinstalled browser
@@ -167,8 +169,20 @@ def main():
         return
 
     with sync_playwright() as p:
-        context = p.chromium.launch_persistent_context(str(ROOT / ".eur_browser"), headless=args.headless, accept_downloads=True,
-                                                     **({"executable_path": args.chromium_path} if args.chromium_path else {}))
+        engine = {"chromium": p.chromium, "chrome": p.chromium, "firefox": p.firefox, "safari": p.webkit}[args.browser]
+        extra = {}
+        if args.browser == "chrome":
+            extra["channel"] = "chrome"  # the Google Chrome installed on your computer
+        if args.chromium_path:
+            extra["executable_path"] = args.chromium_path
+        try:
+            context = engine.launch_persistent_context(str(ROOT / f".eur_browser_{args.browser}"), headless=args.headless,
+                                                       accept_downloads=True, **extra)
+        except Exception as e:
+            install = {"chromium": "chromium", "chrome": "chrome", "firefox": "firefox", "safari": "webkit"}[args.browser]
+            print(f"\nCould not start {args.browser}: {str(e).splitlines()[0][:200]}")
+            print(f"Install it once with:   python -m playwright install {install}")
+            return
         page = context.pages[0] if context.pages else context.new_page()
         downloads = []  # every download in any tab, for the whole session (some sites start the PDF download at once)
 
@@ -179,7 +193,11 @@ def main():
             pg.on("download", on_download)
         context.on("page", lambda pg: pg.on("download", on_download))
         if not args.no_login_wait:
-            page.goto(rows[0]["library_link (EUR proxy)"])
+            try:
+                page.goto(rows[0]["library_link (EUR proxy)"], timeout=90_000)
+            except Exception as e:
+                print(f"\nThe library page did not load ({str(e).splitlines()[0][:150]}).")
+                print(f"Type this address into the browser window yourself:  https://{PROXY_HOST}/login")
             input("\nLog in to EUR in the browser window (if asked), then come back here and press Enter to start... ")
         saved = 0
         for i, row in enumerate(rows[: args.max], 1):

@@ -4,3 +4,4 @@ output/rc/
 __pycache__/
 .eur_browser/
 data/eur_download_log.csv
+.eur_browser*/
