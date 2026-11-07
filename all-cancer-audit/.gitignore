@@ -2,3 +2,5 @@ data/texts/
 manual_pdfs/
 output/rc/
 __pycache__/
+.eur_browser/
+data/eur_download_log.csv
