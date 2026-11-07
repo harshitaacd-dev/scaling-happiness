@@ -19,7 +19,7 @@ import csv
 import random
 import re
 import time
-from urllib.parse import quote, urljoin
+from urllib.parse import quote, urljoin, urlparse
 
 from common import DATA, ROOT
 
@@ -33,7 +33,7 @@ def proxied(url):
     return url if PROXY_HOST in url else PROXY + quote(url, safe="")
 
 
-LOGIN_HOSTS = re.compile(r"login\.microsoftonline|surfconext|/sso|/idp/|shibboleth|/saml|login\.eur|myaccess|/login\?(?!q?url=)", re.I)
+LOGIN_HOSTS = re.compile(r"login\.microsoftonline|surfconext|^sso\.|\.sso\.|/idp/|shibboleth|/saml|login\.eur\.nl|sts\.eur\.nl|myaccess\.eur", re.I)
 
 
 def fix_link(link):
@@ -44,11 +44,28 @@ def fix_link(link):
 
 
 def is_login_page(page):
-    """True when the browser shows a sign-in page (EUR/SURFconext/Microsoft) instead of the article."""
+    """True only when EUR's own sign-in is shown (library proxy, SURFconext, Microsoft, EUR SSO).
+
+    A publisher's own 'sign in' box (shown when EUR has no subscription) is NOT an expired EUR login.
+    Proxied publisher pages live on hosts ending in .eur.idm.oclc.org; EUR's proxy login is on eur.idm.oclc.org itself.
+    """
     try:
-        if LOGIN_HOSTS.search(page.url):
+        u = urlparse(page.url)
+        host = u.netloc.lower()
+        if LOGIN_HOSTS.search(host + u.path):
             return True
-        return page.locator("input[type=password]").count() > 0
+        if host == PROXY_HOST:  # the proxy itself, not a proxied publisher site
+            return u.path.startswith("/login") and page.locator("input[type=password]").count() > 0 or "/login" == u.path
+        return False
+    except Exception:
+        return False
+
+
+def is_proxy_menu(page):
+    """EZproxy shows its database menu when it did not understand the link."""
+    try:
+        u = urlparse(page.url)
+        return u.netloc.lower() == PROXY_HOST and (u.path.startswith("/menu") or "Database Menu" in page.locator("body").inner_text(timeout=3000)[:3000])
     except Exception:
         return False
 
@@ -240,6 +257,9 @@ def main():
                         print("   Still on a sign-in page. Stopping; run the script again after logging in.")
                         log(row, "stopped: not logged in")
                         break
+                if not (len(downloads) > n0) and is_proxy_menu(page):
+                    result = "library link not understood by EUR proxy (menu page shown)"
+                    raise RuntimeError(result)
                 if len(downloads) > n0:
                     data = download_bytes(downloads[-1])
                 if not data and resp is not None and "application/pdf" in (resp.headers.get("content-type") or ""):
