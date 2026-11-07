@@ -4,6 +4,7 @@ Per-tool workbooks go to output/<tool_id>_extraction_table.xlsx. If you have alr
 workbook, re-running this step keeps them out of harm's way: workbooks are only rebuilt with --rebuild, and the
 comparison uses your Final scores where entered (otherwise the Preliminary scores).
 Output: output/*.xlsx and output/comparison_by_sex_group.xlsx
+Build one tool only:  python s6_build_workbooks.py <tool_id> --rebuild   (the comparison then covers only that tool)
 """
 import csv
 import json
@@ -81,10 +82,13 @@ def final_or_prelim(path, sheet, n):
 
 if __name__ == "__main__":
     rebuild = "--rebuild" in sys.argv
+    only = {a for a in sys.argv[1:] if not a.startswith("--")}  # optional: build only these tool_ids
     corpus = {t["tool_id"]: t for t in csv.DictReader(open(DATA / "corpus.csv", encoding="utf-8-sig"))}
     sources = load("sources.json")
     summary = []
     for tid, recs in sources.items():
+        if only and tid not in only:
+            continue
         t = corpus[tid]
         srcs = tool_sources(tid, recs)
         missing = [[f"{r['title']} ({r.get('trial_id') or r.get('doi') or r.get('url', '')})", r.get("fulltext_status", "")]
