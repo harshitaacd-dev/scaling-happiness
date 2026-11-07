@@ -89,11 +89,15 @@ if __name__ == "__main__":
         for pdf in sorted((MANUAL / tool_id).glob("*.pdf")) if (MANUAL / tool_id).exists() else []:
             text = pdf_text(pdf.read_bytes())
             head = norm(text[:3000])
-            match = next((r for r in recs if r.get("title") and norm(r["title"])[:60] in head), None)
+            # a file named <source_id>.pdf (as listed by step 4c) is matched exactly; otherwise match by title
+            match = next((r for r in recs if r.get("source_id") == pdf.stem), None) or \
+                next((r for r in recs if r.get("title") and norm(r["title"])[:60] in head), None)
             if match is None:
                 match = dict(kind="publication", db="Manual PDF", title=pdf.stem, authors="", year="", venue="", pubtype="", abstract="",
                              oa_urls=[], url="", decision="Include", reason="Added by hand")
                 recs.append(match)
+            if match.get("manual_pdf") == str(pdf.relative_to(ROOT)) and match.get("text_file"):
+                continue  # already read on an earlier run
             match["manual_pdf"] = str(pdf.relative_to(ROOT)); match["decision"] = "Include"
             match["_text"] = text
         for k, r in enumerate(recs):

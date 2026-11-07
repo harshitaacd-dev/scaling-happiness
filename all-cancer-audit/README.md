@@ -35,6 +35,7 @@ All model calls use Claude Opus 5.5 with a server-side fallback if a request is 
 | 3 | `python s3_find_sources.py` | Europe PMC, PubMed, Crossref, ClinicalTrials.gov, WHO ICTRP + web search for company pages; screens with the Niramai rule | `data/sources.json`, `data/search_log.json` |
 | 4 | `python s4_fetch_fulltext.py` | Downloads open-access full texts, trial records and web pages | `data/texts/`, updates `sources.json` |
 | 4b | `python s4b_remove_duplicates.py` | Removes republished copies of the same article (keeps the original) and non-English versions | updates `sources.json` |
+| 4c | `python s4c_missing_list.py` | Lists every source still without full text (and abstract-only pages), with library links and the exact file name to save | `data/missing_fulltexts.csv` |
 | **paywalled** | put PDFs in `manual_pdfs/<tool_id>/` | Download them with your library proxy, then re-run step 4 and step 4b | |
 | 5 | `python s5_extract.py` | Extracts Table 1 and the 29 items for every source; checks every quote against the text | `data/extractions/` |
 | 6 | `python s6_build_workbooks.py` | One workbook per tool + `comparison_by_sex_group.xlsx` | `output/` |
