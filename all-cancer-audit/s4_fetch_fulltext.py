@@ -15,7 +15,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
 
-from common import DATA, ROOT, http_get, load, norm, save, slug
+from common import DATA, ROOT, http_get, load, looks_like_gate, norm, save, slug
 
 TEXTS = DATA / "texts"; TEXTS.mkdir(exist_ok=True)
 MANUAL = ROOT / "manual_pdfs"; MANUAL.mkdir(exist_ok=True)
@@ -72,7 +72,7 @@ def fetch(src):
                 continue
         if src["kind"] == "web page" or "html" in r.headers.get("content-type", ""):
             t = html_text(r.content)
-            if len(t) > 1500:
+            if len(t) > 1500 and not looks_like_gate(t, src["kind"]):
                 return t, "ok: web page"
     return None, "missing: no open-access full text (add the PDF to manual_pdfs/)"
 
@@ -88,6 +88,9 @@ if __name__ == "__main__":
         # PDFs you added by hand
         for pdf in sorted((MANUAL / tool_id).glob("*.pdf")) if (MANUAL / tool_id).exists() else []:
             text = pdf_text(pdf.read_bytes())
+            if looks_like_gate(text, "publication"):
+                print(f"WARNING: {pdf.relative_to(ROOT)} looks like a login or paywall page, not the paper. Skipped; replace it.")
+                continue
             head = norm(text[:3000])
             # a file named <source_id>.pdf (as listed by step 4c) is matched exactly; otherwise match by title
             match = next((r for r in recs if r.get("source_id") == pdf.stem), None) or \

@@ -57,6 +57,28 @@ def http_get(url, tries=2, deadline=60, **kw):
     return None
 
 
+GATE = re.compile(r"sign in|log ?in|password|single sign-on|institutional (access|login)|access through your institution|"
+                  r"purchase (this )?(article|pdf)|buy (this )?article|subscribe to (read|continue)|rent this article|"
+                  r"enable (javascript|cookies)|verify you are (a )?human|captcha|access denied|403 forbidden", re.I)
+ARTICLE = re.compile(r"\b(abstract|introduction|methods?|results|discussion|conclusions?|references)\b", re.I)
+
+
+def looks_like_gate(text, kind="publication"):
+    """True if a saved text looks like a login, paywall, cookie or bot-check page rather than the document.
+
+    Papers must show article structure; company/news web pages often have 'Log in' in their menus, so for them
+    only short pages dominated by login/paywall wording are treated as gates.
+    """
+    if not text:
+        return True
+    body = text[:30000]
+    gates = len(GATE.findall(body))
+    if kind == "publication":
+        sections = len(set(m.lower() for m in ARTICLE.findall(body)))
+        return (len(text) < 25000 and gates >= 2 and sections < 3) or (len(text) < 4000 and gates >= 1)
+    return len(text) < 6000 and gates >= 2
+
+
 def norm(t):
     t = html.unescape(re.sub(r"<[^>]+>", "", t or "")).lower()
     return re.sub(r"[^a-z0-9 ]", "", re.sub(r"\s+", " ", t)).strip()

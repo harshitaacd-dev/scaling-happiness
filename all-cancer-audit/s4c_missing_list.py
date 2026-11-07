@@ -9,21 +9,26 @@ Also lists papers whose saved text looks like an abstract page only (short text)
 import csv
 from urllib.parse import quote
 
-from common import DATA, ROOT, load
+from common import DATA, ROOT, load, looks_like_gate, save
 
 PROXY = "https://eur.idm.oclc.org/login?url="  # Erasmus University library proxy
 PRIORITY = {"publication": 1, "trial registration": 2, "web page": 3}
 
 if __name__ == "__main__":
     sources = load("sources.json")
-    rows = []
+    rows, gate_fixed = [], 0
     for tid, recs in sources.items():
         for r in recs:
             if r.get("decision") not in ("Include", "Borderline") or not r.get("source_id"):
                 continue
             reason = None
+            if r.get("text_file") and looks_like_gate((DATA / "texts" / r["text_file"]).read_text(), r["kind"]):
+                (DATA / "texts" / r["text_file"]).unlink()
+                r.pop("text_file"); r.pop("manual_pdf", None)
+                r["fulltext_status"] = "missing: saved text was a login/paywall page"
+                gate_fixed += 1
             if not r.get("text_file"):
-                reason = "no full text"
+                reason = "no full text" if "login/paywall" not in r.get("fulltext_status", "") else "saved text was a login or paywall page"
             elif r["kind"] == "publication" and not r.get("manual_pdf"):
                 size = (DATA / "texts" / r["text_file"]).stat().st_size
                 if size < 8000:
@@ -49,6 +54,9 @@ if __name__ == "__main__":
                 "done (y/n)": "",
             })
             (ROOT / "manual_pdfs" / tid).mkdir(parents=True, exist_ok=True)
+    save("sources.json", sources)
+    if gate_fixed:
+        print(f"{gate_fixed} saved texts were login/paywall pages: removed and put back on the list")
     rows.sort(key=lambda x: (x["priority"], x["tool_id"], str(x["year"])))
     out = DATA / "missing_fulltexts.csv"
     with open(out, "w", newline="", encoding="utf-8-sig") as f:

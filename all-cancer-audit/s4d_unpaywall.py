@@ -10,7 +10,7 @@ import re
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from common import DATA, http_get, load, save
+from common import DATA, http_get, load, looks_like_gate, save
 from s4_fetch_fulltext import TEXTS, epmc_xml, html_text, pdf_text
 
 API = "https://api.unpaywall.org/v2/"
@@ -48,7 +48,7 @@ def get_text(urls):
                 continue
         if "html" in r.headers.get("content-type", ""):
             t = html_text(r.content)
-            if len(t) > 8000:  # a full article page, not just an abstract
+            if len(t) > 8000 and not looks_like_gate(t, "publication"):  # a full article page, not an abstract or login page
                 return t, f"ok: Unpaywall web page ({u[:60]})"
     return None, None
 

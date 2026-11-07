@@ -33,6 +33,19 @@ def proxied(url):
     return url if PROXY_HOST in url else PROXY + quote(url, safe="")
 
 
+LOGIN_HOSTS = re.compile(r"login\.microsoftonline|surfconext|/sso|/idp/|shibboleth|/saml|login\.eur|myaccess|/login\?(?!url=)", re.I)
+
+
+def is_login_page(page):
+    """True when the browser shows a sign-in page (EUR/SURFconext/Microsoft) instead of the article."""
+    try:
+        if LOGIN_HOSTS.search(page.url):
+            return True
+        return page.locator("input[type=password]").count() > 0
+    except Exception:
+        return False
+
+
 def is_pdf(data):
     return bool(data) and data[:4] == b"%PDF"
 
@@ -105,6 +118,17 @@ def wait_for_user_pdf(page, context, seconds, downloads, n0):
     return None
 
 
+def live_page(context, page):
+    """Return a usable tab: the current one, another open one, or a new one. None if the browser itself is gone."""
+    try:
+        if page is not None and not page.is_closed():
+            return page
+        open_pages = [p for p in context.pages if not p.is_closed()]
+        return open_pages[0] if open_pages else context.new_page()
+    except Exception:
+        return None
+
+
 def done_set():
     if not LOG.exists():
         return set()
@@ -162,6 +186,10 @@ def main():
             dest = ROOT / row["save_in_folder"] / row["save_as"]
             dest.parent.mkdir(parents=True, exist_ok=True)
             print(f"[{i}/{min(len(rows), args.max)}] {row['title'][:70]}", flush=True)
+            page = live_page(context, page)
+            if page is None:
+                print("\nThe browser window was closed. Run the script again to continue (saved papers are skipped).")
+                break
             data, result = None, ""
             n0 = len(downloads)
             try:
@@ -172,6 +200,19 @@ def main():
                         raise
                     resp = None  # the link went straight to a file download
                 page.wait_for_timeout(3000)
+                if not (len(downloads) > n0) and is_login_page(page):
+                    if args.no_login_wait:
+                        result = "login required (EUR session expired)"
+                        raise RuntimeError(result)
+                    print("\n   Your EUR login has expired (the browser shows a sign-in page).")
+                    input("   Log in again in the browser window, then press Enter here to continue... ")
+                    page = live_page(context, page)
+                    resp = page.goto(row["library_link (EUR proxy)"], wait_until="domcontentloaded", timeout=90_000)
+                    page.wait_for_timeout(3000)
+                    if is_login_page(page):
+                        print("   Still on a sign-in page. Stopping; run the script again after logging in.")
+                        log(row, "stopped: not logged in")
+                        break
                 if len(downloads) > n0:
                     data = download_bytes(downloads[-1])
                 if not data and resp is not None and "application/pdf" in (resp.headers.get("content-type") or ""):
@@ -190,7 +231,7 @@ def main():
             except KeyboardInterrupt:
                 print("\nStopped by you."); break
             except Exception as e:
-                result = f"error: {type(e).__name__}"
+                result = result or f"error: {type(e).__name__}"
             if data:
                 dest.write_bytes(data); saved += 1
                 result = f"saved ({len(data) // 1024} KB)"
