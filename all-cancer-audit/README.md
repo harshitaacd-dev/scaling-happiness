@@ -44,6 +44,8 @@ All model calls use Claude Opus 5.5 with a server-side fallback if a request is 
 | 5 | `python s5_extract.py` | Extracts Table 1 and the 29 items for every source; checks every quote against the text | `data/extractions/` |
 | 6 | `python s6_build_workbooks.py` | One workbook per tool + `comparison_by_sex_group.xlsx` | `output/` |
 
+**Where are we?** `python status.py` shows, per tool and in total, what is found, downloaded, missing, extracted and built, and what to do next.
+
 Every step can be stopped and re-run: finished work is cached and skipped. `python s5_extract.py <tool_id>` extracts one tool only.
 
 ## The inclusion rules
