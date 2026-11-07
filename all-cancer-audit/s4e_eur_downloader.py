@@ -24,7 +24,7 @@ from urllib.parse import quote, urljoin
 from common import DATA, ROOT
 
 PROXY_HOST = "eur.idm.oclc.org"
-PROXY = f"https://{PROXY_HOST}/login?url="
+PROXY = f"https://{PROXY_HOST}/login?qurl="  # EZproxy: qurl takes a URL-encoded target
 LOG = DATA / "eur_download_log.csv"
 BLOCK_SIGNS = re.compile(r"captcha|unusual traffic|too many requests|access (has been )?(denied|blocked)|systematic download", re.I)
 
@@ -33,7 +33,14 @@ def proxied(url):
     return url if PROXY_HOST in url else PROXY + quote(url, safe="")
 
 
-LOGIN_HOSTS = re.compile(r"login\.microsoftonline|surfconext|/sso|/idp/|shibboleth|/saml|login\.eur|myaccess|/login\?(?!url=)", re.I)
+LOGIN_HOSTS = re.compile(r"login\.microsoftonline|surfconext|/sso|/idp/|shibboleth|/saml|login\.eur|myaccess|/login\?(?!q?url=)", re.I)
+
+
+def fix_link(link):
+    """Older lists used login?url= with an encoded target, which EUR's EZproxy does not read; use qurl= instead."""
+    if "/login?url=" in link and "%3A" in link:
+        return link.replace("/login?url=", "/login?qurl=", 1)
+    return link
 
 
 def is_login_page(page):
@@ -160,7 +167,9 @@ def main():
 
     from playwright.sync_api import sync_playwright
 
-    rows = [r for r in csv.DictReader(open(args.csv, encoding="utf-8-sig"))
+    rows = [dict(r, **{"library_link (EUR proxy)": fix_link(r.get("library_link (EUR proxy)") or "")})
+            for r in csv.DictReader(open(args.csv, encoding="utf-8-sig"))]
+    rows = [r for r in rows
             if r["kind"] == "publication" and r.get("library_link (EUR proxy)") and (r.get("done (y/n)") or "").lower() != "y"]
     already = done_set()
     rows = [r for r in rows if r["save_as"] not in already and not (ROOT / r["save_in_folder"] / r["save_as"]).exists()]

@@ -11,7 +11,7 @@ from urllib.parse import quote
 
 from common import DATA, ROOT, load, looks_like_gate, save
 
-PROXY = "https://eur.idm.oclc.org/login?url="  # Erasmus University library proxy
+PROXY = "https://eur.idm.oclc.org/login?qurl="  # Erasmus University library proxy (EZproxy; qurl = URL-encoded target)
 PRIORITY = {"publication": 1, "trial registration": 2, "web page": 3}
 
 if __name__ == "__main__":
