@@ -1,16 +1,18 @@
 """Appendix B: one table per tool with the final STANDING Together score of every source on every item.
-Reads the frozen source-level scores and checks that each tool's best scores equal Table 4.3 in the paper."""
+Reads the frozen source-level scores and checks that each tool's best scores equal Table B.1 (rev/appendix_matrix.md)."""
 import openpyxl, re, sys, collections, difflib
 B = "."
 paper = open(f"{B}/rev/full.md", encoding="utf-8").read()
+matrix = open(f"{B}/rev/appendix_matrix.md", encoding="utf-8").read()
+paper_m = paper + "\n<!--MATRIX-->\n" + matrix
 
 def table_rows(start, end):
-    seg = paper[paper.index(start):paper.index(end)]
+    seg = paper_m[paper_m.index(start):paper_m.index(end)]
     return [[c.strip() for c in l.strip().strip('|').split('|')] for l in seg.split('\n')
             if l.startswith('|') and not l.startswith('|:')]
 
 t42 = table_rows('<!--LANDSCAPE_START-->', 'Table: Table 4.2')
-t43 = table_rows('Table: Table 4.2', 'Table: Table 4.3')
+t43 = table_rows('<!--MATRIX-->', 'Table: Table B.1')
 items = t43[0][1:30]
 T42 = {r[0]: dict(zip(t42[0], r)) for r in t42[1:] if not r[0].startswith('**')}
 T43 = {r[0]: ''.join(x if x in '012' else '0' for x in r[1:30]) for r in t43[1:] if not r[0].startswith('**')}
@@ -32,7 +34,7 @@ for k, rs in by.items():
     c = inv.get(best(rs), [])
     name[k] = c[0] if len(c) == 1 else (k if k in c else difflib.get_close_matches(k, c, 1, 0)[0])
 print(set(name.values())^set(order), len(set(name.values())));assert sorted(name.values()) == sorted(order), "tool mapping failed"
-for k, rs in by.items(): assert best(rs) == T43[name[k]], f"best scores differ from Table 4.3: {k}"
+for k, rs in by.items(): assert best(rs) == T43[name[k]], f"best scores differ from Table B.1: {k}"
 assert len(rows) == 601
 
 def stype(t):
@@ -55,12 +57,15 @@ def esc(s):
 
 long = {v: k for k, v in name.items()}
 out = ["# Appendix B: Scores by tool and source", "",
-       "This appendix reports, for each tool, the final score of every public source on each of the 29 STANDING Together items "
-       "(0 = not reported, 1 = partially reported, 2 = completely reported; codebook in Appendix A). The last row of each table is the tool's score, "
-       "the highest score of any of its sources on each item, as in Table 4.3. Tools appear in the order of Table 4.2. "
+       "This appendix reports each tool's final score on each of the 29 STANDING Together items (Section B.1, Table B.1) and, for each tool, "
+       "the final score of every public source behind it (Sections B.2 to B.36). Scores are 0 = not reported, 1 = partially reported and 2 = completely reported "
+       "(codebook in Appendix A). The last row of each source table is the tool's score, the highest score of any of its sources on each item, as in Table B.1. "
+       "Tools appear in the order of Table 4.2. "
        "Below each table, a key lists the sources by number, with their type, year, title and location. Sources marked as local PDF files "
-       "were obtained manually (for example, through the university library) and are not redistributed. The source-level scores are also available in the public repository; quotations from paywalled sources are withheld.", "", "```{=openxml}", "<!--LANDSCAPE_START-->", "```", ""]
-for n, short in enumerate(order, 1):
+       "were obtained manually (for example, through the university library) and are not redistributed. The source-level scores are also available in the public repository; quotations from paywalled sources are withheld.", "", "```{=openxml}", "<!--LANDSCAPE_START-->", "```", "",
+       "## B.1 Scores of each tool on each item", "", matrix.strip(), "",
+       '```{=openxml}', '<w:p><w:r><w:br w:type="page"/></w:r></w:p>', '```', ""]
+for n, short in enumerate(order, 2):
     k = long[short]; rs = sorted(by[k], key=lambda r: int(r[1]))
     p = T42[short]; c = difflib.get_close_matches(k, list(mc), 1, 0.3)[0]
     out += [f"## B.{n} {esc(short)}", "",
