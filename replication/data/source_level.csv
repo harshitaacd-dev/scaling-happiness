@@ -1,0 +1,602 @@
+tool,score,items,stype,glob,ln_src,study
+iIDEAS Intelligent-C (iIDEAS-C),27,25,study,0,1.6094379124341003,1
+iIDEAS Intelligent-C (iIDEAS-C),30,27,study,0,1.6094379124341003,1
+iIDEAS Intelligent-C (iIDEAS-C),17,14,registration,0,1.6094379124341003,1
+iIDEAS Intelligent-C (iIDEAS-C),12,11,registration,0,1.6094379124341003,1
+iIDEAS Intelligent-C (iIDEAS-C),13,11,registration,0,1.6094379124341003,1
+AIIMS mammography AI,2,2,news,0,2.0794415416798357,0
+AIIMS mammography AI,3,3,news,0,2.0794415416798357,0
+AIIMS mammography AI,4,4,news,0,2.0794415416798357,0
+AIIMS mammography AI,7,7,web,0,2.0794415416798357,0
+AIIMS mammography AI,4,4,news,0,2.0794415416798357,0
+AIIMS mammography AI,1,1,web,0,2.0794415416798357,0
+AIIMS mammography AI,1,1,news,0,2.0794415416798357,0
+AIIMS mammography AI,2,2,web,0,2.0794415416798357,0
+iOncology.ai,6,6,study,0,1.791759469228055,1
+iOncology.ai,4,4,web,0,1.791759469228055,1
+iOncology.ai,3,3,web,0,1.791759469228055,1
+iOncology.ai,7,7,web,0,1.791759469228055,1
+iOncology.ai,13,12,web,0,1.791759469228055,1
+iOncology.ai,3,3,web,0,1.791759469228055,1
+CervAstra,8,8,registration,0,1.9459101490553132,0
+CervAstra,6,6,news,0,1.9459101490553132,0
+CervAstra,5,5,web,0,1.9459101490553132,0
+CervAstra,8,7,web,0,1.9459101490553132,0
+CervAstra,9,8,web,0,1.9459101490553132,0
+CervAstra,7,7,news,0,1.9459101490553132,0
+CervAstra,1,1,web,0,1.9459101490553132,0
+Berry.Care,4,4,web,0,1.3862943611198906,0
+Berry.Care,1,1,web,0,1.3862943611198906,0
+Berry.Care,4,4,web,0,1.3862943611198906,0
+Berry.Care,1,1,web,0,1.3862943611198906,0
+PredAID-CERVIA,12,12,registration,0,1.0986122886681098,0
+PredAID-CERVIA,13,13,registration,0,1.0986122886681098,0
+PredAID-CERVIA,11,11,registration,0,1.0986122886681098,0
+DeepTek chest X-ray AI / Augmento,29,26,study,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,32,28,study,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,22,19,study,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,7,6,news,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,0,0,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,2,2,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,3,3,news,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,5,5,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,10,10,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,2,2,news,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,0,0,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,1,1,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,2,2,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,3,3,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,10,9,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,1,1,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,2,2,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,1,1,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,5,5,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,0,0,web,0,3.044522437723423,1
+DeepTek chest X-ray AI / Augmento,1,1,web,0,3.044522437723423,1
+Dognosis breath test,21,19,study,0,3.367295829986474,1
+Dognosis breath test,14,14,registration,0,3.367295829986474,1
+Dognosis breath test,9,9,news,0,3.367295829986474,1
+Dognosis breath test,16,15,news,0,3.367295829986474,1
+Dognosis breath test,8,7,news,0,3.367295829986474,1
+Dognosis breath test,10,10,web,0,3.367295829986474,1
+Dognosis breath test,7,7,web,0,3.367295829986474,1
+Dognosis breath test,5,5,web,0,3.367295829986474,1
+Dognosis breath test,2,2,web,0,3.367295829986474,1
+Dognosis breath test,13,13,web,0,3.367295829986474,1
+Dognosis breath test,4,4,web,0,3.367295829986474,1
+Dognosis breath test,8,7,news,0,3.367295829986474,1
+Dognosis breath test,11,11,news,0,3.367295829986474,1
+Dognosis breath test,12,12,news,0,3.367295829986474,1
+Dognosis breath test,11,11,news,0,3.367295829986474,1
+Dognosis breath test,9,9,news,0,3.367295829986474,1
+Dognosis breath test,20,18,web,0,3.367295829986474,1
+Dognosis breath test,6,6,news,0,3.367295829986474,1
+Dognosis breath test,17,16,news,0,3.367295829986474,1
+Dognosis breath test,9,9,web,0,3.367295829986474,1
+Dognosis breath test,7,7,news,0,3.367295829986474,1
+Dognosis breath test,12,12,news,0,3.367295829986474,1
+Dognosis breath test,7,7,web,0,3.367295829986474,1
+Dognosis breath test,8,8,news,0,3.367295829986474,1
+Dognosis breath test,0,0,web,0,3.367295829986474,1
+Dognosis breath test,10,10,news,0,3.367295829986474,1
+Dognosis breath test,0,0,web,0,3.367295829986474,1
+Dognosis breath test,13,13,news,0,3.367295829986474,1
+Dognosis breath test,10,10,news,0,3.367295829986474,1
+NURA AI screening centres,1,1,news,1,2.995732273553991,0
+NURA AI screening centres,4,4,news,1,2.995732273553991,0
+NURA AI screening centres,4,4,web,1,2.995732273553991,0
+NURA AI screening centres,1,1,news,1,2.995732273553991,0
+NURA AI screening centres,8,6,news,1,2.995732273553991,0
+NURA AI screening centres,1,1,news,1,2.995732273553991,0
+NURA AI screening centres,0,0,web,1,2.995732273553991,0
+NURA AI screening centres,0,0,web,1,2.995732273553991,0
+NURA AI screening centres,1,1,web,1,2.995732273553991,0
+NURA AI screening centres,1,1,news,1,2.995732273553991,0
+NURA AI screening centres,2,2,web,1,2.995732273553991,0
+NURA AI screening centres,1,1,news,1,2.995732273553991,0
+NURA AI screening centres,3,3,web,1,2.995732273553991,0
+NURA AI screening centres,5,5,web,1,2.995732273553991,0
+NURA AI screening centres,0,0,web,1,2.995732273553991,0
+NURA AI screening centres,1,1,web,1,2.995732273553991,0
+NURA AI screening centres,2,2,web,1,2.995732273553991,0
+NURA AI screening centres,2,2,news,1,2.995732273553991,0
+NURA AI screening centres,1,1,web,1,2.995732273553991,0
+NURA AI screening centres,1,1,web,1,2.995732273553991,0
+CAD EYE,26,23,study,1,3.8918202981106265,1
+CAD EYE,31,26,study,1,3.8918202981106265,1
+CAD EYE,31,26,study,1,3.8918202981106265,1
+CAD EYE,25,23,study,1,3.8918202981106265,1
+CAD EYE,24,22,study,1,3.8918202981106265,1
+CAD EYE,24,22,study,1,3.8918202981106265,1
+CAD EYE,24,22,study,1,3.8918202981106265,1
+CAD EYE,25,23,study,1,3.8918202981106265,1
+CAD EYE,20,19,study,1,3.8918202981106265,1
+CAD EYE,28,24,study,1,3.8918202981106265,1
+CAD EYE,26,23,study,1,3.8918202981106265,1
+CAD EYE,25,21,study,1,3.8918202981106265,1
+CAD EYE,13,13,study,1,3.8918202981106265,1
+CAD EYE,14,11,registration,1,3.8918202981106265,1
+CAD EYE,14,14,registration,1,3.8918202981106265,1
+CAD EYE,14,13,registration,1,3.8918202981106265,1
+CAD EYE,13,12,registration,1,3.8918202981106265,1
+CAD EYE,16,14,registration,1,3.8918202981106265,1
+CAD EYE,12,10,registration,1,3.8918202981106265,1
+CAD EYE,14,12,registration,1,3.8918202981106265,1
+CAD EYE,18,16,registration,1,3.8918202981106265,1
+CAD EYE,11,10,registration,1,3.8918202981106265,1
+CAD EYE,13,11,registration,1,3.8918202981106265,1
+CAD EYE,19,17,registration,1,3.8918202981106265,1
+CAD EYE,19,17,registration,1,3.8918202981106265,1
+CAD EYE,15,12,registration,1,3.8918202981106265,1
+CAD EYE,12,10,registration,1,3.8918202981106265,1
+CAD EYE,17,15,registration,1,3.8918202981106265,1
+CAD EYE,19,16,registration,1,3.8918202981106265,1
+CAD EYE,14,12,registration,1,3.8918202981106265,1
+CAD EYE,18,15,registration,1,3.8918202981106265,1
+CAD EYE,14,13,registration,1,3.8918202981106265,1
+CAD EYE,19,18,registration,1,3.8918202981106265,1
+CAD EYE,18,17,registration,1,3.8918202981106265,1
+CAD EYE,22,19,registration,1,3.8918202981106265,1
+CAD EYE,11,10,registration,1,3.8918202981106265,1
+CAD EYE,16,14,registration,1,3.8918202981106265,1
+CAD EYE,14,12,registration,1,3.8918202981106265,1
+CAD EYE,2,2,news,1,3.8918202981106265,1
+CAD EYE,3,3,news,1,3.8918202981106265,1
+CAD EYE,0,0,news,1,3.8918202981106265,1
+CAD EYE,1,1,news,1,3.8918202981106265,1
+CAD EYE,3,3,news,1,3.8918202981106265,1
+CAD EYE,2,2,news,1,3.8918202981106265,1
+CAD EYE,1,1,news,1,3.8918202981106265,1
+CAD EYE,2,2,web,1,3.8918202981106265,1
+CAD EYE,3,3,web,1,3.8918202981106265,1
+CAD EYE,0,0,web,1,3.8918202981106265,1
+CAD EYE,0,0,web,1,3.8918202981106265,1
+Google Health AI via Apollo Radiology International,34,28,study,1,2.1972245773362196,1
+Google Health AI via Apollo Radiology International,4,4,web,1,2.1972245773362196,1
+Google Health AI via Apollo Radiology International,3,3,web,1,2.1972245773362196,1
+Google Health AI via Apollo Radiology International,2,2,web,1,2.1972245773362196,1
+Google Health AI via Apollo Radiology International,4,4,web,1,2.1972245773362196,1
+Google Health AI via Apollo Radiology International,3,3,web,1,2.1972245773362196,1
+Google Health AI via Apollo Radiology International,3,3,web,1,2.1972245773362196,1
+Google Health AI via Apollo Radiology International,3,3,web,1,2.1972245773362196,1
+Google Health AI via Apollo Radiology International,2,2,web,1,2.1972245773362196,1
+GrivaVision colposcope (Cervivision AI software),3,3,web,0,2.0794415416798357,0
+GrivaVision colposcope (Cervivision AI software),3,3,news,0,2.0794415416798357,0
+GrivaVision colposcope (Cervivision AI software),1,1,news,0,2.0794415416798357,0
+GrivaVision colposcope (Cervivision AI software),1,1,news,0,2.0794415416798357,0
+GrivaVision colposcope (Cervivision AI software),3,3,news,0,2.0794415416798357,0
+GrivaVision colposcope (Cervivision AI software),3,3,web,0,2.0794415416798357,0
+GrivaVision colposcope (Cervivision AI software),2,2,news,0,2.0794415416798357,0
+GrivaVision colposcope (Cervivision AI software),1,1,news,0,2.0794415416798357,0
+Aarogya Aarohan,2,2,news,0,2.302585092994046,0
+Aarogya Aarohan,2,2,news,0,2.302585092994046,0
+Aarogya Aarohan,10,10,web,0,2.302585092994046,0
+Aarogya Aarohan,7,7,web,0,2.302585092994046,0
+Aarogya Aarohan,9,9,web,0,2.302585092994046,0
+Aarogya Aarohan,2,2,web,0,2.302585092994046,0
+Aarogya Aarohan,4,4,web,0,2.302585092994046,0
+Aarogya Aarohan,1,1,news,0,2.302585092994046,0
+Aarogya Aarohan,9,9,web,0,2.302585092994046,0
+Aarogya Aarohan,8,8,web,0,2.302585092994046,0
+DiagnOCe,22,18,study,0,0.0,1
+LIRA screening platform,23,21,study,0,1.791759469228055,1
+LIRA screening platform,25,23,study,0,1.791759469228055,1
+LIRA screening platform,12,12,study,0,1.791759469228055,1
+LIRA screening platform,1,1,web,0,1.791759469228055,1
+LIRA screening platform,2,2,web,0,1.791759469228055,1
+LIRA screening platform,1,1,web,0,1.791759469228055,1
+AI wearable thermal breast device,2,2,news,0,2.3978952727983707,0
+AI wearable thermal breast device,0,0,news,0,2.3978952727983707,0
+AI wearable thermal breast device,8,8,news,0,2.3978952727983707,0
+AI wearable thermal breast device,6,6,news,0,2.3978952727983707,0
+AI wearable thermal breast device,5,5,news,0,2.3978952727983707,0
+AI wearable thermal breast device,6,6,news,0,2.3978952727983707,0
+AI wearable thermal breast device,3,3,web,0,2.3978952727983707,0
+AI wearable thermal breast device,9,9,news,0,2.3978952727983707,0
+AI wearable thermal breast device,6,5,news,0,2.3978952727983707,0
+AI wearable thermal breast device,8,8,news,0,2.3978952727983707,0
+AI wearable thermal breast device,0,0,web,0,2.3978952727983707,0
+MedCognetics breast AI,8,8,news,1,2.772588722239781,0
+MedCognetics breast AI,5,5,web,1,2.772588722239781,0
+MedCognetics breast AI,10,10,web,1,2.772588722239781,0
+MedCognetics breast AI,9,9,news,1,2.772588722239781,0
+MedCognetics breast AI,8,7,news,1,2.772588722239781,0
+MedCognetics breast AI,9,8,news,1,2.772588722239781,0
+MedCognetics breast AI,3,3,news,1,2.772588722239781,0
+MedCognetics breast AI,9,9,news,1,2.772588722239781,0
+MedCognetics breast AI,7,7,web,1,2.772588722239781,0
+MedCognetics breast AI,8,7,news,1,2.772588722239781,0
+MedCognetics breast AI,7,6,news,1,2.772588722239781,0
+MedCognetics breast AI,5,5,web,1,2.772588722239781,0
+MedCognetics breast AI,0,0,web,1,2.772588722239781,0
+MedCognetics breast AI,7,7,web,1,2.772588722239781,0
+MedCognetics breast AI,9,9,news,1,2.772588722239781,0
+MedCognetics breast AI,7,7,web,1,2.772588722239781,0
+GI Genius,32,27,study,1,4.127134385045092,1
+GI Genius,22,22,study,1,4.127134385045092,1
+GI Genius,21,20,study,1,4.127134385045092,1
+GI Genius,28,25,study,1,4.127134385045092,1
+GI Genius,24,22,study,1,4.127134385045092,1
+GI Genius,30,25,study,1,4.127134385045092,1
+GI Genius,24,22,study,1,4.127134385045092,1
+GI Genius,25,23,study,1,4.127134385045092,1
+GI Genius,27,24,study,1,4.127134385045092,1
+GI Genius,29,26,study,1,4.127134385045092,1
+GI Genius,24,23,study,1,4.127134385045092,1
+GI Genius,24,22,study,1,4.127134385045092,1
+GI Genius,26,22,study,1,4.127134385045092,1
+GI Genius,28,24,study,1,4.127134385045092,1
+GI Genius,21,20,study,1,4.127134385045092,1
+GI Genius,28,26,study,1,4.127134385045092,1
+GI Genius,26,24,study,1,4.127134385045092,1
+GI Genius,23,22,study,1,4.127134385045092,1
+GI Genius,14,11,registration,1,4.127134385045092,1
+GI Genius,21,19,registration,1,4.127134385045092,1
+GI Genius,14,13,registration,1,4.127134385045092,1
+GI Genius,13,11,registration,1,4.127134385045092,1
+GI Genius,14,12,registration,1,4.127134385045092,1
+GI Genius,12,10,registration,1,4.127134385045092,1
+GI Genius,24,22,registration,1,4.127134385045092,1
+GI Genius,16,15,registration,1,4.127134385045092,1
+GI Genius,13,13,registration,1,4.127134385045092,1
+GI Genius,18,16,registration,1,4.127134385045092,1
+GI Genius,22,19,registration,1,4.127134385045092,1
+GI Genius,16,15,registration,1,4.127134385045092,1
+GI Genius,22,20,registration,1,4.127134385045092,1
+GI Genius,21,18,registration,1,4.127134385045092,1
+GI Genius,15,14,registration,1,4.127134385045092,1
+GI Genius,13,11,registration,1,4.127134385045092,1
+GI Genius,20,19,registration,1,4.127134385045092,1
+GI Genius,15,15,registration,1,4.127134385045092,1
+GI Genius,13,12,registration,1,4.127134385045092,1
+GI Genius,15,13,registration,1,4.127134385045092,1
+GI Genius,18,16,registration,1,4.127134385045092,1
+GI Genius,16,14,registration,1,4.127134385045092,1
+GI Genius,15,15,registration,1,4.127134385045092,1
+GI Genius,14,12,registration,1,4.127134385045092,1
+GI Genius,14,13,registration,1,4.127134385045092,1
+GI Genius,15,14,registration,1,4.127134385045092,1
+GI Genius,16,14,registration,1,4.127134385045092,1
+GI Genius,16,14,registration,1,4.127134385045092,1
+GI Genius,14,12,registration,1,4.127134385045092,1
+GI Genius,22,18,registration,1,4.127134385045092,1
+GI Genius,10,9,registration,1,4.127134385045092,1
+GI Genius,21,21,registration,1,4.127134385045092,1
+GI Genius,22,21,registration,1,4.127134385045092,1
+GI Genius,23,21,registration,1,4.127134385045092,1
+GI Genius,17,15,registration,1,4.127134385045092,1
+GI Genius,12,12,registration,1,4.127134385045092,1
+GI Genius,30,24,registration,1,4.127134385045092,1
+GI Genius,5,5,news,1,4.127134385045092,1
+GI Genius,6,6,news,1,4.127134385045092,1
+GI Genius,12,11,news,1,4.127134385045092,1
+GI Genius,2,2,news,1,4.127134385045092,1
+GI Genius,0,0,news,1,4.127134385045092,1
+GI Genius,0,0,web,1,4.127134385045092,1
+GI Genius,11,10,other,1,4.127134385045092,1
+MedXAI cervical AI,10,9,registration,0,1.791759469228055,0
+MedXAI cervical AI,0,0,news,0,1.791759469228055,0
+MedXAI cervical AI,0,0,news,0,1.791759469228055,0
+MedXAI cervical AI,0,0,news,0,1.791759469228055,0
+MedXAI cervical AI,0,0,news,0,1.791759469228055,0
+MedXAI cervical AI,1,1,web,0,1.791759469228055,0
+EVA System with VisualCheck,2,2,study,1,2.9444389791664403,1
+EVA System with VisualCheck,26,22,study,1,2.9444389791664403,1
+EVA System with VisualCheck,26,24,study,1,2.9444389791664403,1
+EVA System with VisualCheck,23,21,study,1,2.9444389791664403,1
+EVA System with VisualCheck,22,20,study,1,2.9444389791664403,1
+EVA System with VisualCheck,29,24,study,1,2.9444389791664403,1
+EVA System with VisualCheck,10,9,registration,1,2.9444389791664403,1
+EVA System with VisualCheck,2,2,news,1,2.9444389791664403,1
+EVA System with VisualCheck,6,6,news,1,2.9444389791664403,1
+EVA System with VisualCheck,7,7,news,1,2.9444389791664403,1
+EVA System with VisualCheck,3,3,news,1,2.9444389791664403,1
+EVA System with VisualCheck,5,5,news,1,2.9444389791664403,1
+EVA System with VisualCheck,5,5,web,1,2.9444389791664403,1
+EVA System with VisualCheck,1,1,news,1,2.9444389791664403,1
+EVA System with VisualCheck,6,6,news,1,2.9444389791664403,1
+EVA System with VisualCheck,5,5,web,1,2.9444389791664403,1
+EVA System with VisualCheck,2,2,web,1,2.9444389791664403,1
+EVA System with VisualCheck,5,5,web,1,2.9444389791664403,1
+EVA System with VisualCheck,4,4,news,1,2.9444389791664403,1
+Thermalytix,25,22,study,0,3.6635616461296463,1
+Thermalytix,26,23,study,0,3.6635616461296463,1
+Thermalytix,31,27,study,0,3.6635616461296463,1
+Thermalytix,30,25,study,0,3.6635616461296463,1
+Thermalytix,23,21,study,0,3.6635616461296463,1
+Thermalytix,33,28,study,0,3.6635616461296463,1
+Thermalytix,28,24,study,0,3.6635616461296463,1
+Thermalytix,30,26,study,0,3.6635616461296463,1
+Thermalytix,31,26,study,0,3.6635616461296463,1
+Thermalytix,26,24,study,0,3.6635616461296463,1
+Thermalytix,27,23,study,0,3.6635616461296463,1
+Thermalytix,28,25,study,0,3.6635616461296463,1
+Thermalytix,12,11,study,0,3.6635616461296463,1
+Thermalytix,16,15,study,0,3.6635616461296463,1
+Thermalytix,14,13,study,0,3.6635616461296463,1
+Thermalytix,16,14,study,0,3.6635616461296463,1
+Thermalytix,13,12,registration,0,3.6635616461296463,1
+Thermalytix,14,13,registration,0,3.6635616461296463,1
+Thermalytix,18,17,registration,0,3.6635616461296463,1
+Thermalytix,14,13,registration,0,3.6635616461296463,1
+Thermalytix,14,12,registration,0,3.6635616461296463,1
+Thermalytix,15,14,registration,0,3.6635616461296463,1
+Thermalytix,13,12,registration,0,3.6635616461296463,1
+Thermalytix,18,17,news,0,3.6635616461296463,1
+Thermalytix,11,10,web,0,3.6635616461296463,1
+Thermalytix,5,4,web,0,3.6635616461296463,1
+Thermalytix,2,2,web,0,3.6635616461296463,1
+Thermalytix,3,3,web,0,3.6635616461296463,1
+Thermalytix,9,9,web,0,3.6635616461296463,1
+Thermalytix,20,19,web,0,3.6635616461296463,1
+Thermalytix,3,3,web,0,3.6635616461296463,1
+Thermalytix,15,13,web,0,3.6635616461296463,1
+Thermalytix,2,2,web,0,3.6635616461296463,1
+Thermalytix,11,11,web,0,3.6635616461296463,1
+Thermalytix,6,6,web,0,3.6635616461296463,1
+Thermalytix,4,4,web,0,3.6635616461296463,1
+Thermalytix,9,9,web,0,3.6635616461296463,1
+Thermalytix,8,8,web,0,3.6635616461296463,1
+Thermalytix,0,0,web,0,3.6635616461296463,1
+DermaAId,7,7,news,0,1.791759469228055,0
+DermaAId,7,7,news,0,1.791759469228055,0
+DermaAId,0,0,news,0,1.791759469228055,0
+DermaAId,14,13,web,0,1.791759469228055,0
+DermaAId,0,0,web,0,1.791759469228055,0
+DermaAId,4,4,web,0,1.791759469228055,0
+Smart Scope CX,25,21,study,0,3.295836866004329,1
+Smart Scope CX,24,22,study,0,3.295836866004329,1
+Smart Scope CX,24,21,study,0,3.295836866004329,1
+Smart Scope CX,26,22,study,0,3.295836866004329,1
+Smart Scope CX,24,22,study,0,3.295836866004329,1
+Smart Scope CX,23,20,study,0,3.295836866004329,1
+Smart Scope CX,22,20,study,0,3.295836866004329,1
+Smart Scope CX,28,26,study,0,3.295836866004329,1
+Smart Scope CX,10,10,registration,0,3.295836866004329,1
+Smart Scope CX,11,11,registration,0,3.295836866004329,1
+Smart Scope CX,10,10,registration,0,3.295836866004329,1
+Smart Scope CX,12,11,registration,0,3.295836866004329,1
+Smart Scope CX,10,9,registration,0,3.295836866004329,1
+Smart Scope CX,12,12,registration,0,3.295836866004329,1
+Smart Scope CX,10,10,registration,0,3.295836866004329,1
+Smart Scope CX,11,11,registration,0,3.295836866004329,1
+Smart Scope CX,11,10,registration,0,3.295836866004329,1
+Smart Scope CX,12,10,registration,0,3.295836866004329,1
+Smart Scope CX,2,2,news,0,3.295836866004329,1
+Smart Scope CX,3,3,web,0,3.295836866004329,1
+Smart Scope CX,2,2,news,0,3.295836866004329,1
+Smart Scope CX,0,0,news,0,3.295836866004329,1
+Smart Scope CX,1,1,news,0,3.295836866004329,1
+Smart Scope CX,0,0,web,0,3.295836866004329,1
+Smart Scope CX,3,3,web,0,3.295836866004329,1
+Smart Scope CX,2,2,web,0,3.295836866004329,1
+Smart Scope CX,0,0,web,0,3.295836866004329,1
+Predible Lung,9,9,registration,0,1.9459101490553132,0
+Predible Lung,10,10,registration,0,1.9459101490553132,0
+Predible Lung,1,1,news,0,1.9459101490553132,0
+Predible Lung,7,7,news,0,1.9459101490553132,0
+Predible Lung,6,5,web,0,1.9459101490553132,0
+Predible Lung,4,4,web,0,1.9459101490553132,0
+Predible Lung,6,6,news,0,1.9459101490553132,0
+OncoVeryx-F,29,24,study,0,2.0794415416798357,1
+OncoVeryx-F,23,21,study,0,2.0794415416798357,1
+OncoVeryx-F,12,10,registration,0,2.0794415416798357,1
+OncoVeryx-F,0,0,web,0,2.0794415416798357,1
+OncoVeryx-F,6,6,web,0,2.0794415416798357,1
+OncoVeryx-F,0,0,news,0,2.0794415416798357,1
+OncoVeryx-F,1,1,web,0,2.0794415416798357,1
+OncoVeryx-F,1,1,news,0,2.0794415416798357,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,32,27,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,31,26,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,28,25,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,31,27,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,30,28,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,33,28,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,32,27,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,26,22,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,12,12,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,34,28,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,31,25,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,26,21,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,29,25,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,30,26,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,30,26,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,32,26,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,27,24,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,32,28,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,31,27,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,27,23,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,29,25,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,30,25,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,27,24,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,28,25,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,28,25,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,27,24,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,31,28,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,22,21,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,31,27,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,26,24,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,32,25,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,16,16,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,33,28,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,30,26,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,22,19,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,32,26,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,26,25,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,31,27,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,21,20,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,32,26,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,27,25,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,28,26,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,33,27,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,34,27,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,22,21,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,29,25,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,30,26,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,29,27,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,30,27,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,31,28,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,29,26,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,12,11,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,27,25,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,29,28,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,29,27,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,32,28,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,25,24,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,30,27,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,29,26,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,31,26,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,32,27,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,19,17,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,26,22,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,21,19,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,29,25,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,21,20,study,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,18,17,registration,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,16,14,registration,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,19,16,registration,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,26,24,registration,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,19,16,registration,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,11,11,registration,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,20,18,registration,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,16,15,registration,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,2,2,news,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,8,7,web,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,4,4,news,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,9,9,web,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,8,8,news,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,1,1,news,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,5,5,news,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,5,5,web,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,1,1,news,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,9,9,news,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,3,3,web,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,7,7,web,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,5,5,web,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,4,4,web,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,5,5,web,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,10,9,web,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,3,2,web,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,5,5,news,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,4,4,web,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,0,0,web,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,3,3,web,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,1,1,news,0,4.574710978503383,1
+qXR / qXR-LN and Qure Lung Cancer AI Suite,16,16,other,0,4.574710978503383,1
+MAMMO-Q,3,3,web,0,1.0986122886681098,0
+MAMMO-Q,1,1,web,0,1.0986122886681098,0
+MAMMO-Q,7,7,other,0,1.0986122886681098,0
+OralScan,10,10,registration,0,2.0794415416798357,0
+OralScan,6,5,web,0,2.0794415416798357,0
+OralScan,3,3,web,0,2.0794415416798357,0
+OralScan,3,3,web,0,2.0794415416798357,0
+OralScan,1,1,web,0,2.0794415416798357,0
+OralScan,1,1,web,0,2.0794415416798357,0
+OralScan,3,3,web,0,2.0794415416798357,0
+OralScan,3,3,news,0,2.0794415416798357,0
+TissueAI,3,3,news,0,2.0794415416798357,0
+TissueAI,11,10,web,0,2.0794415416798357,0
+TissueAI,5,5,web,0,2.0794415416798357,0
+TissueAI,1,1,web,0,2.0794415416798357,0
+TissueAI,7,7,web,0,2.0794415416798357,0
+TissueAI,9,7,web,0,2.0794415416798357,0
+TissueAI,14,12,web,0,2.0794415416798357,0
+TissueAI,4,3,web,0,2.0794415416798357,0
+SigTuple AI100 with Shonit,25,23,study,0,2.0794415416798357,1
+SigTuple AI100 with Shonit,12,12,study,0,2.0794415416798357,1
+SigTuple AI100 with Shonit,23,21,study,0,2.0794415416798357,1
+SigTuple AI100 with Shonit,12,12,study,0,2.0794415416798357,1
+SigTuple AI100 with Shonit,13,13,registration,0,2.0794415416798357,1
+SigTuple AI100 with Shonit,1,1,web,0,2.0794415416798357,1
+SigTuple AI100 with Shonit,2,2,web,0,2.0794415416798357,1
+SigTuple AI100 with Shonit,1,1,web,0,2.0794415416798357,1
+MammoAssist,5,5,study,0,2.0794415416798357,1
+MammoAssist,3,3,web,0,2.0794415416798357,1
+MammoAssist,0,0,news,0,2.0794415416798357,1
+MammoAssist,3,3,web,0,2.0794415416798357,1
+MammoAssist,1,1,news,0,2.0794415416798357,1
+MammoAssist,0,0,web,0,2.0794415416798357,1
+MammoAssist,3,3,web,0,2.0794415416798357,1
+MammoAssist,0,0,other,0,2.0794415416798357,1
+iBreastExam,22,19,study,0,3.332204510175204,1
+iBreastExam,33,27,study,0,3.332204510175204,1
+iBreastExam,29,24,study,0,3.332204510175204,1
+iBreastExam,27,24,study,0,3.332204510175204,1
+iBreastExam,21,20,registration,0,3.332204510175204,1
+iBreastExam,19,15,registration,0,3.332204510175204,1
+iBreastExam,10,9,registration,0,3.332204510175204,1
+iBreastExam,20,19,registration,0,3.332204510175204,1
+iBreastExam,13,13,registration,0,3.332204510175204,1
+iBreastExam,7,7,news,0,3.332204510175204,1
+iBreastExam,0,0,web,0,3.332204510175204,1
+iBreastExam,2,2,news,0,3.332204510175204,1
+iBreastExam,4,4,news,0,3.332204510175204,1
+iBreastExam,6,6,web,0,3.332204510175204,1
+iBreastExam,0,0,web,0,3.332204510175204,1
+iBreastExam,1,1,web,0,3.332204510175204,1
+iBreastExam,9,8,news,0,3.332204510175204,1
+iBreastExam,10,10,news,0,3.332204510175204,1
+iBreastExam,3,3,web,0,3.332204510175204,1
+iBreastExam,9,9,web,0,3.332204510175204,1
+iBreastExam,1,1,web,0,3.332204510175204,1
+iBreastExam,7,6,news,0,3.332204510175204,1
+iBreastExam,2,2,news,0,3.332204510175204,1
+iBreastExam,1,1,news,0,3.332204510175204,1
+iBreastExam,11,10,web,0,3.332204510175204,1
+iBreastExam,2,2,news,0,3.332204510175204,1
+iBreastExam,9,9,news,0,3.332204510175204,1
+iBreastExam,12,12,other,0,3.332204510175204,1
+Automated Visual Evaluation (AVE),20,17,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),29,26,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),33,27,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),13,13,web,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),15,14,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),25,24,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),31,28,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),28,26,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),32,26,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),26,23,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),25,22,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),26,24,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),23,22,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),34,29,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),30,26,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),28,26,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),24,23,study,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),12,11,registration,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),15,13,registration,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),17,16,registration,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),23,20,registration,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),23,19,registration,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),13,12,registration,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),19,17,news,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),19,18,news,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),6,6,web,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),2,2,web,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),22,19,web,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),14,14,news,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),13,12,web,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),20,17,other,1,3.4657359027997265,1
+Automated Visual Evaluation (AVE),9,8,other,1,3.4657359027997265,1
+Aysa,27,24,study,1,2.772588722239781,1
+Aysa,28,24,study,1,2.772588722239781,1
+Aysa,26,23,study,1,2.772588722239781,1
+Aysa,27,24,study,1,2.772588722239781,1
+Aysa,0,0,study,1,2.772588722239781,1
+Aysa,8,8,news,1,2.772588722239781,1
+Aysa,4,4,news,1,2.772588722239781,1
+Aysa,0,0,web,1,2.772588722239781,1
+Aysa,14,13,web,1,2.772588722239781,1
+Aysa,8,8,web,1,2.772588722239781,1
+Aysa,6,6,web,1,2.772588722239781,1
+Aysa,0,0,web,1,2.772588722239781,1
+Aysa,0,0,web,1,2.772588722239781,1
+Aysa,2,2,web,1,2.772588722239781,1
+Aysa,4,4,web,1,2.772588722239781,1
+Aysa,7,7,news,1,2.772588722239781,1
+CerviAI,11,10,registration,0,1.791759469228055,0
+CerviAI,1,1,web,0,1.791759469228055,0
+CerviAI,6,6,web,0,1.791759469228055,0
+CerviAI,2,2,web,0,1.791759469228055,0
+CerviAI,1,1,web,0,1.791759469228055,0
+CerviAI,4,4,other,0,1.791759469228055,0

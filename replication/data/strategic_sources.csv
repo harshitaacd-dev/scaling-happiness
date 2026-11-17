@@ -1,0 +1,602 @@
+tool,stype,accuracy,limitation,subgroup,training,demog,channel
+iIDEAS Intelligent-C (iIDEAS-C),Study,1,1,1,1,1,Peer-reviewed / study
+iIDEAS Intelligent-C (iIDEAS-C),Study,1,1,1,1,1,Peer-reviewed / study
+iIDEAS Intelligent-C (iIDEAS-C),Trial registration,0,0,0,0,1,Registration / other
+iIDEAS Intelligent-C (iIDEAS-C),Trial registration,0,0,0,0,1,Registration / other
+iIDEAS Intelligent-C (iIDEAS-C),Trial registration,0,0,0,0,1,Registration / other
+AIIMS mammography AI,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+AIIMS mammography AI,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+AIIMS mammography AI,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+AIIMS mammography AI,Company / web page,1,1,0,0,0,"Developer-controlled (web, news)"
+AIIMS mammography AI,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+AIIMS mammography AI,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+AIIMS mammography AI,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+AIIMS mammography AI,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+iOncology.ai,Study,0,0,0,1,0,Peer-reviewed / study
+iOncology.ai,Company / web page,0,1,0,0,0,"Developer-controlled (web, news)"
+iOncology.ai,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+iOncology.ai,Company / web page,0,1,0,0,0,"Developer-controlled (web, news)"
+iOncology.ai,Company / web page,0,1,0,1,0,"Developer-controlled (web, news)"
+iOncology.ai,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+CervAstra,Trial registration,0,0,0,0,0,Registration / other
+CervAstra,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+CervAstra,Company / web page,0,0,0,0,1,"Developer-controlled (web, news)"
+CervAstra,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+CervAstra,Company / web page,0,0,0,0,1,"Developer-controlled (web, news)"
+CervAstra,News / press release,0,0,0,0,1,"Developer-controlled (web, news)"
+CervAstra,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Berry.Care,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Berry.Care,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Berry.Care,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+Berry.Care,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+PredAID-CERVIA,Trial registration,0,0,0,0,1,Registration / other
+PredAID-CERVIA,Trial registration,0,0,0,0,1,Registration / other
+PredAID-CERVIA,Trial registration,0,0,0,0,1,Registration / other
+DeepTek chest X-ray AI / Augmento,Study,1,1,1,0,1,Peer-reviewed / study
+DeepTek chest X-ray AI / Augmento,Study,1,1,1,0,1,Peer-reviewed / study
+DeepTek chest X-ray AI / Augmento,Study,1,0,1,0,1,Peer-reviewed / study
+DeepTek chest X-ray AI / Augmento,News / press release,0,0,0,1,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,0,1,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,1,0,0,0,1,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+DeepTek chest X-ray AI / Augmento,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,Study,0,1,0,0,0,Peer-reviewed / study
+Dognosis breath test,Trial registration,0,0,1,0,1,Registration / other
+Dognosis breath test,News / press release,1,1,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,1,1,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,0,1,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,0,1,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,0,1,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,0,1,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,1,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,1,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,Company / web page,1,1,1,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,1,1,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,Company / web page,1,0,1,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,0,1,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,1,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,0,0,0,0,"Developer-controlled (web, news)"
+Dognosis breath test,News / press release,1,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,News / press release,0,0,0,1,0,"Developer-controlled (web, news)"
+NURA AI screening centres,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,Company / web page,0,0,0,0,1,"Developer-controlled (web, news)"
+NURA AI screening centres,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,Company / web page,0,0,0,1,0,"Developer-controlled (web, news)"
+NURA AI screening centres,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+NURA AI screening centres,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+CAD EYE,Study,1,1,1,0,1,Peer-reviewed / study
+CAD EYE,Study,0,1,1,0,1,Peer-reviewed / study
+CAD EYE,Study,1,1,1,1,1,Peer-reviewed / study
+CAD EYE,Study,1,1,1,0,1,Peer-reviewed / study
+CAD EYE,Study,1,1,1,0,1,Peer-reviewed / study
+CAD EYE,Study,0,1,0,0,1,Peer-reviewed / study
+CAD EYE,Study,1,1,1,0,1,Peer-reviewed / study
+CAD EYE,Study,0,1,1,0,1,Peer-reviewed / study
+CAD EYE,Study,1,1,1,1,0,Peer-reviewed / study
+CAD EYE,Study,1,1,1,0,1,Peer-reviewed / study
+CAD EYE,Study,1,1,1,0,1,Peer-reviewed / study
+CAD EYE,Study,1,1,0,1,0,Peer-reviewed / study
+CAD EYE,Study,0,1,0,0,1,Peer-reviewed / study
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,1,0,1,Registration / other
+CAD EYE,Trial registration,0,0,1,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,1,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,1,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,1,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,1,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,1,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,Trial registration,0,0,0,0,1,Registration / other
+CAD EYE,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+CAD EYE,News / press release,0,0,0,1,0,"Developer-controlled (web, news)"
+CAD EYE,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+CAD EYE,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+CAD EYE,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+CAD EYE,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+CAD EYE,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+CAD EYE,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+CAD EYE,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+CAD EYE,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+CAD EYE,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Google Health AI via Apollo Radiology International,Study,1,1,1,1,1,Peer-reviewed / study
+Google Health AI via Apollo Radiology International,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Google Health AI via Apollo Radiology International,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Google Health AI via Apollo Radiology International,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Google Health AI via Apollo Radiology International,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Google Health AI via Apollo Radiology International,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Google Health AI via Apollo Radiology International,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Google Health AI via Apollo Radiology International,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Google Health AI via Apollo Radiology International,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+GrivaVision colposcope (Cervivision AI software),Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+GrivaVision colposcope (Cervivision AI software),News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+GrivaVision colposcope (Cervivision AI software),News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+GrivaVision colposcope (Cervivision AI software),News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+GrivaVision colposcope (Cervivision AI software),News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+GrivaVision colposcope (Cervivision AI software),Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+GrivaVision colposcope (Cervivision AI software),News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+GrivaVision colposcope (Cervivision AI software),News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+Aarogya Aarohan,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+Aarogya Aarohan,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+Aarogya Aarohan,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Aarogya Aarohan,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Aarogya Aarohan,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Aarogya Aarohan,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Aarogya Aarohan,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Aarogya Aarohan,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+Aarogya Aarohan,Company / web page,0,0,0,0,1,"Developer-controlled (web, news)"
+Aarogya Aarohan,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+DiagnOCe,Study,1,1,0,1,0,Peer-reviewed / study
+LIRA screening platform,Study,1,1,1,0,1,Peer-reviewed / study
+LIRA screening platform,Study,1,1,1,0,1,Peer-reviewed / study
+LIRA screening platform,Study,1,0,1,0,0,Peer-reviewed / study
+LIRA screening platform,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+LIRA screening platform,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+LIRA screening platform,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+AI wearable thermal breast device,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+AI wearable thermal breast device,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+AI wearable thermal breast device,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+AI wearable thermal breast device,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+AI wearable thermal breast device,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+AI wearable thermal breast device,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+AI wearable thermal breast device,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+AI wearable thermal breast device,News / press release,1,1,0,0,0,"Developer-controlled (web, news)"
+AI wearable thermal breast device,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+AI wearable thermal breast device,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+AI wearable thermal breast device,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,News / press release,0,0,0,1,1,"Developer-controlled (web, news)"
+MedCognetics breast AI,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,News / press release,0,0,0,1,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,News / press release,0,0,0,1,1,"Developer-controlled (web, news)"
+MedCognetics breast AI,News / press release,0,0,0,1,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,News / press release,0,0,0,1,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,Company / web page,0,0,0,1,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,News / press release,0,0,0,1,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,News / press release,0,0,0,1,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,Company / web page,1,0,1,0,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,Company / web page,0,0,1,1,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+MedCognetics breast AI,Company / web page,0,0,0,1,0,"Developer-controlled (web, news)"
+GI Genius,Study,0,1,1,0,1,Peer-reviewed / study
+GI Genius,Study,0,1,0,0,1,Peer-reviewed / study
+GI Genius,Study,0,1,0,0,0,Peer-reviewed / study
+GI Genius,Study,0,1,1,0,1,Peer-reviewed / study
+GI Genius,Study,0,1,1,0,0,Peer-reviewed / study
+GI Genius,Study,0,1,1,0,1,Peer-reviewed / study
+GI Genius,Study,0,1,1,0,1,Peer-reviewed / study
+GI Genius,Study,1,1,1,0,0,Peer-reviewed / study
+GI Genius,Study,1,1,1,0,1,Peer-reviewed / study
+GI Genius,Study,0,1,1,0,1,Peer-reviewed / study
+GI Genius,Study,0,1,1,0,1,Peer-reviewed / study
+GI Genius,Study,1,1,1,0,1,Peer-reviewed / study
+GI Genius,Study,1,1,1,1,1,Peer-reviewed / study
+GI Genius,Study,0,1,1,0,1,Peer-reviewed / study
+GI Genius,Study,0,1,1,0,1,Peer-reviewed / study
+GI Genius,Study,0,1,1,0,1,Peer-reviewed / study
+GI Genius,Study,1,1,1,0,0,Peer-reviewed / study
+GI Genius,Study,1,1,0,1,1,Peer-reviewed / study
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,1,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,1,1,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,1,1,0,1,Registration / other
+GI Genius,Trial registration,0,1,1,0,1,Registration / other
+GI Genius,Trial registration,0,0,1,0,1,Registration / other
+GI Genius,Trial registration,0,0,1,0,1,Registration / other
+GI Genius,Trial registration,0,1,0,0,1,Registration / other
+GI Genius,Trial registration,1,1,1,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,1,0,1,Registration / other
+GI Genius,Trial registration,0,0,1,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,1,0,1,Registration / other
+GI Genius,Trial registration,0,0,1,0,1,Registration / other
+GI Genius,Trial registration,0,1,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,1,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,1,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,1,0,1,Registration / other
+GI Genius,Trial registration,0,0,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,1,0,1,Registration / other
+GI Genius,Trial registration,0,0,1,0,1,Registration / other
+GI Genius,Trial registration,0,1,0,1,1,Registration / other
+GI Genius,Trial registration,0,1,0,0,1,Registration / other
+GI Genius,Trial registration,0,0,1,0,1,Registration / other
+GI Genius,Trial registration,0,1,1,1,1,Registration / other
+GI Genius,News / press release,0,0,1,0,0,"Developer-controlled (web, news)"
+GI Genius,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+GI Genius,News / press release,1,0,0,0,1,"Developer-controlled (web, news)"
+GI Genius,News / press release,1,0,0,0,0,"Developer-controlled (web, news)"
+GI Genius,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+GI Genius,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+GI Genius,Other,1,0,1,0,0,Registration / other
+MedXAI cervical AI,Trial registration,0,0,0,0,0,Registration / other
+MedXAI cervical AI,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+MedXAI cervical AI,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+MedXAI cervical AI,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+MedXAI cervical AI,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+MedXAI cervical AI,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+EVA System with VisualCheck,Study,0,0,0,0,0,Peer-reviewed / study
+EVA System with VisualCheck,Study,1,1,1,0,1,Peer-reviewed / study
+EVA System with VisualCheck,Study,0,1,0,0,1,Peer-reviewed / study
+EVA System with VisualCheck,Study,0,1,0,0,0,Peer-reviewed / study
+EVA System with VisualCheck,Study,1,1,0,0,1,Peer-reviewed / study
+EVA System with VisualCheck,Study,1,1,1,1,1,Peer-reviewed / study
+EVA System with VisualCheck,Trial registration,0,0,0,0,0,Registration / other
+EVA System with VisualCheck,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+EVA System with VisualCheck,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+EVA System with VisualCheck,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+EVA System with VisualCheck,News / press release,0,0,0,0,1,"Developer-controlled (web, news)"
+EVA System with VisualCheck,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+EVA System with VisualCheck,Company / web page,0,0,0,1,0,"Developer-controlled (web, news)"
+EVA System with VisualCheck,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+EVA System with VisualCheck,News / press release,1,0,0,1,0,"Developer-controlled (web, news)"
+EVA System with VisualCheck,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+EVA System with VisualCheck,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+EVA System with VisualCheck,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+EVA System with VisualCheck,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+Thermalytix,Study,1,1,1,0,1,Peer-reviewed / study
+Thermalytix,Study,0,1,1,0,1,Peer-reviewed / study
+Thermalytix,Study,1,1,1,0,1,Peer-reviewed / study
+Thermalytix,Study,1,1,1,0,1,Peer-reviewed / study
+Thermalytix,Study,0,1,0,0,1,Peer-reviewed / study
+Thermalytix,Study,1,1,1,0,1,Peer-reviewed / study
+Thermalytix,Study,0,1,1,0,1,Peer-reviewed / study
+Thermalytix,Study,1,1,1,0,1,Peer-reviewed / study
+Thermalytix,Study,1,1,1,0,1,Peer-reviewed / study
+Thermalytix,Study,1,1,0,0,0,Peer-reviewed / study
+Thermalytix,Study,1,1,1,0,1,Peer-reviewed / study
+Thermalytix,Study,1,1,1,0,1,Peer-reviewed / study
+Thermalytix,Study,0,1,0,0,0,Peer-reviewed / study
+Thermalytix,Study,1,0,1,0,0,Peer-reviewed / study
+Thermalytix,Study,0,0,0,0,1,Peer-reviewed / study
+Thermalytix,Study,0,0,0,0,1,Peer-reviewed / study
+Thermalytix,Trial registration,0,0,1,0,1,Registration / other
+Thermalytix,Trial registration,0,0,0,0,1,Registration / other
+Thermalytix,Trial registration,1,0,1,0,1,Registration / other
+Thermalytix,Trial registration,0,0,1,0,0,Registration / other
+Thermalytix,Trial registration,0,0,1,0,1,Registration / other
+Thermalytix,Trial registration,0,0,0,0,1,Registration / other
+Thermalytix,Trial registration,0,0,0,0,0,Registration / other
+Thermalytix,News / press release,1,1,1,0,0,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,0,0,0,0,1,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,0,0,1,0,0,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,1,0,0,0,1,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,0,1,1,0,0,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,1,0,1,0,0,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,0,0,0,0,1,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,1,0,0,1,0,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,1,1,1,0,1,"Developer-controlled (web, news)"
+Thermalytix,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+DermaAId,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+DermaAId,News / press release,0,0,0,0,1,"Developer-controlled (web, news)"
+DermaAId,News / press release,1,0,0,0,0,"Developer-controlled (web, news)"
+DermaAId,Company / web page,0,1,0,1,0,"Developer-controlled (web, news)"
+DermaAId,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+DermaAId,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Smart Scope CX,Study,1,1,0,1,1,Peer-reviewed / study
+Smart Scope CX,Study,1,1,1,0,1,Peer-reviewed / study
+Smart Scope CX,Study,1,1,0,1,1,Peer-reviewed / study
+Smart Scope CX,Study,1,1,1,0,1,Peer-reviewed / study
+Smart Scope CX,Study,1,1,1,0,1,Peer-reviewed / study
+Smart Scope CX,Study,1,1,0,0,1,Peer-reviewed / study
+Smart Scope CX,Study,1,1,0,0,1,Peer-reviewed / study
+Smart Scope CX,Study,1,1,1,0,1,Peer-reviewed / study
+Smart Scope CX,Trial registration,0,0,0,0,1,Registration / other
+Smart Scope CX,Trial registration,0,0,0,0,1,Registration / other
+Smart Scope CX,Trial registration,0,0,0,0,1,Registration / other
+Smart Scope CX,Trial registration,0,0,0,0,1,Registration / other
+Smart Scope CX,Trial registration,0,0,0,0,1,Registration / other
+Smart Scope CX,Trial registration,0,0,0,0,1,Registration / other
+Smart Scope CX,Trial registration,0,0,0,0,1,Registration / other
+Smart Scope CX,Trial registration,0,0,0,0,0,Registration / other
+Smart Scope CX,Trial registration,0,0,0,0,1,Registration / other
+Smart Scope CX,Trial registration,0,0,0,0,0,Registration / other
+Smart Scope CX,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+Smart Scope CX,Company / web page,0,0,0,1,1,"Developer-controlled (web, news)"
+Smart Scope CX,News / press release,1,0,0,0,1,"Developer-controlled (web, news)"
+Smart Scope CX,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+Smart Scope CX,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+Smart Scope CX,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Smart Scope CX,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Smart Scope CX,Company / web page,0,0,0,0,1,"Developer-controlled (web, news)"
+Smart Scope CX,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Predible Lung,Trial registration,0,0,0,1,1,Registration / other
+Predible Lung,Trial registration,0,0,0,0,0,Registration / other
+Predible Lung,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+Predible Lung,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+Predible Lung,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Predible Lung,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Predible Lung,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+OncoVeryx-F,Study,1,1,1,0,1,Peer-reviewed / study
+OncoVeryx-F,Study,1,1,1,0,1,Peer-reviewed / study
+OncoVeryx-F,Trial registration,0,0,0,0,1,Registration / other
+OncoVeryx-F,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+OncoVeryx-F,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+OncoVeryx-F,News / press release,1,0,0,0,0,"Developer-controlled (web, news)"
+OncoVeryx-F,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+OncoVeryx-F,News / press release,1,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,0,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,0,0,1,0,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,1,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,1,0,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,1,1,1,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,1,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,1,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,1,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,0,1,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,1,0,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,1,0,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,1,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,1,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,1,0,0,0,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,0,1,0,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,1,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,0,0,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,1,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,0,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,0,1,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,0,0,0,0,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,1,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,0,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,0,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,1,0,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,1,1,1,1,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Study,0,1,1,0,1,Peer-reviewed / study
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Trial registration,0,0,1,0,1,Registration / other
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Trial registration,0,1,0,0,1,Registration / other
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Trial registration,0,0,1,0,1,Registration / other
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Trial registration,0,1,1,0,1,Registration / other
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Trial registration,0,0,0,0,1,Registration / other
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Trial registration,0,0,0,0,1,Registration / other
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Trial registration,0,1,0,0,1,Registration / other
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Trial registration,0,0,0,0,1,Registration / other
+qXR / qXR-LN and Qure Lung Cancer AI Suite,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,News / press release,1,0,0,1,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Company / web page,1,0,0,1,1,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,News / press release,1,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Company / web page,0,1,0,1,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Company / web page,0,0,0,1,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Company / web page,0,1,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,News / press release,0,0,0,1,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+qXR / qXR-LN and Qure Lung Cancer AI Suite,Other,1,0,1,1,1,Registration / other
+MAMMO-Q,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+MAMMO-Q,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+MAMMO-Q,Other,0,1,0,1,0,Registration / other
+OralScan,Trial registration,0,0,0,0,0,Registration / other
+OralScan,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+OralScan,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+OralScan,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+OralScan,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+OralScan,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+OralScan,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+OralScan,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+TissueAI,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+TissueAI,Company / web page,0,1,0,1,1,"Developer-controlled (web, news)"
+TissueAI,Company / web page,0,0,0,1,0,"Developer-controlled (web, news)"
+TissueAI,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+TissueAI,Company / web page,0,0,0,1,0,"Developer-controlled (web, news)"
+TissueAI,Company / web page,0,1,0,1,0,"Developer-controlled (web, news)"
+TissueAI,Company / web page,0,0,0,1,0,"Developer-controlled (web, news)"
+TissueAI,Company / web page,0,0,0,1,0,"Developer-controlled (web, news)"
+SigTuple AI100 with Shonit,Study,1,1,0,1,1,Peer-reviewed / study
+SigTuple AI100 with Shonit,Study,1,0,0,0,0,Peer-reviewed / study
+SigTuple AI100 with Shonit,Study,1,1,1,0,1,Peer-reviewed / study
+SigTuple AI100 with Shonit,Study,0,1,0,0,1,Peer-reviewed / study
+SigTuple AI100 with Shonit,Trial registration,0,0,0,0,1,Registration / other
+SigTuple AI100 with Shonit,Company / web page,0,0,0,1,0,"Developer-controlled (web, news)"
+SigTuple AI100 with Shonit,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+SigTuple AI100 with Shonit,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+MammoAssist,Study,0,1,0,0,0,Peer-reviewed / study
+MammoAssist,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+MammoAssist,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+MammoAssist,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+MammoAssist,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+MammoAssist,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+MammoAssist,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+MammoAssist,Other,0,0,0,0,0,Registration / other
+iBreastExam,Study,0,1,0,0,1,Peer-reviewed / study
+iBreastExam,Study,0,1,1,0,1,Peer-reviewed / study
+iBreastExam,Study,1,1,1,0,1,Peer-reviewed / study
+iBreastExam,Study,1,1,1,0,1,Peer-reviewed / study
+iBreastExam,Trial registration,1,1,0,0,1,Registration / other
+iBreastExam,Trial registration,0,0,0,0,1,Registration / other
+iBreastExam,Trial registration,0,0,0,0,0,Registration / other
+iBreastExam,Trial registration,1,0,1,0,1,Registration / other
+iBreastExam,Trial registration,0,0,0,0,1,Registration / other
+iBreastExam,News / press release,0,0,0,0,1,"Developer-controlled (web, news)"
+iBreastExam,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,Company / web page,0,0,1,0,1,"Developer-controlled (web, news)"
+iBreastExam,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+iBreastExam,Other,0,0,0,0,0,Registration / other
+Automated Visual Evaluation (AVE),Study,1,1,0,1,0,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,1,1,1,1,1,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,0,1,0,0,1,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Company / web page,0,1,0,1,0,"Developer-controlled (web, news)"
+Automated Visual Evaluation (AVE),Study,0,1,0,0,0,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,0,1,1,1,0,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,0,1,1,1,1,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,1,1,1,1,1,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,1,1,1,1,1,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,0,1,1,1,0,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,1,1,0,1,0,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,0,1,1,1,0,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,1,1,0,1,1,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,0,1,1,1,1,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,1,1,1,1,1,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,0,1,1,0,1,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Study,1,1,1,0,1,Peer-reviewed / study
+Automated Visual Evaluation (AVE),Trial registration,0,0,0,0,1,Registration / other
+Automated Visual Evaluation (AVE),Trial registration,0,0,1,0,0,Registration / other
+Automated Visual Evaluation (AVE),Trial registration,0,0,0,0,1,Registration / other
+Automated Visual Evaluation (AVE),Trial registration,0,1,0,0,1,Registration / other
+Automated Visual Evaluation (AVE),Trial registration,0,0,0,0,1,Registration / other
+Automated Visual Evaluation (AVE),Trial registration,0,0,0,0,0,Registration / other
+Automated Visual Evaluation (AVE),News / press release,1,1,1,1,1,"Developer-controlled (web, news)"
+Automated Visual Evaluation (AVE),News / press release,1,1,0,0,0,"Developer-controlled (web, news)"
+Automated Visual Evaluation (AVE),Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Automated Visual Evaluation (AVE),Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Automated Visual Evaluation (AVE),Company / web page,1,1,1,0,0,"Developer-controlled (web, news)"
+Automated Visual Evaluation (AVE),News / press release,0,0,1,0,1,"Developer-controlled (web, news)"
+Automated Visual Evaluation (AVE),Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Automated Visual Evaluation (AVE),Other,0,0,0,0,1,Registration / other
+Automated Visual Evaluation (AVE),Other,1,0,0,0,0,Registration / other
+Aysa,Study,0,1,1,1,1,Peer-reviewed / study
+Aysa,Study,0,1,0,0,1,Peer-reviewed / study
+Aysa,Study,1,1,1,0,1,Peer-reviewed / study
+Aysa,Study,0,1,0,0,1,Peer-reviewed / study
+Aysa,Study,0,0,0,0,0,Peer-reviewed / study
+Aysa,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+Aysa,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+Aysa,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Aysa,Company / web page,1,1,0,0,1,"Developer-controlled (web, news)"
+Aysa,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Aysa,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Aysa,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Aysa,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Aysa,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Aysa,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+Aysa,News / press release,0,0,0,0,0,"Developer-controlled (web, news)"
+CerviAI,Trial registration,0,0,0,0,1,Registration / other
+CerviAI,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+CerviAI,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+CerviAI,Company / web page,0,0,0,0,0,"Developer-controlled (web, news)"
+CerviAI,Company / web page,1,0,0,0,0,"Developer-controlled (web, news)"
+CerviAI,Other,0,0,0,0,0,Registration / other
