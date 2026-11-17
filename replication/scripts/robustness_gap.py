@@ -20,6 +20,11 @@ for y in ["items","comp","total"]:
         m=smf.ols(spec,data=tool).fit(cov_type="HC3")
         res[spec]=(m.params["glob"],m.bse["glob"],m.pvalues["glob"],m.rsquared)
         print(f"  {spec:32s} glob={m.params['glob']:6.2f} (SE {m.bse['glob']:.2f}, p={m.pvalues['glob']:.3f})  R2={m.rsquared:.2f}"+("" if "+" not in spec else f"  ln_src={m.params['ln_src']:.2f} (p={m.pvalues['ln_src']:.3f})"+(f" study={m.params['study']:.2f} (p={m.pvalues['study']:.3f})" if "study" in spec else "")))
+# same tests for routine use in India (Section 4.4)
+for spec in ["items ~ routine", "items ~ routine + ln_src", "items ~ routine + ln_src + study"]:
+    m=smf.ols(spec,data=tool).fit(cov_type="HC3")
+    res[spec]=(m.params["routine"],m.bse["routine"],m.pvalues["routine"],m.rsquared)
+    print(f"  {spec:32s} routine={m.params['routine']:6.2f} (SE {m.bse['routine']:.2f}, p={m.pvalues['routine']:.3f})  R2={m.rsquared:.2f}")
 # permutation test for glob coefficient in full model (items)
 m0=smf.ols("items ~ glob + ln_src + study",data=tool).fit(); obs=m0.params["glob"]; rng=np.random.default_rng(1); cnt=0; R=5000
 for _ in range(R):

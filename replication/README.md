@@ -11,7 +11,7 @@ This folder holds the materials needed to check and repeat the audit reported in
 | `data/source_level_scores.csv` | Final score (0/1/2) of each of the 601 sources on each of the 29 items, with tool, source number, type, year, title, authors and location. These are the data behind Appendix B. A tool's score on an item is the highest score in any of its sources. |
 | `data/element_coding_final.json.gz` | Element-level coding of all 17,429 item scores: which applicable elements were found and which were missing, the preliminary score and the final (two-step) score. |
 | `data/final_results.xlsx` | The results tables of the paper (study flow, tool characteristics, scores, items, training vs evaluation data, group comparisons, source types, validation). |
-| `data/tool_level.csv`, `data/source_level.csv`, `data/gap_tests.json` | Inputs and results of the tests of the difference between global and Indian developers (Section 4.4, Table 4.6). |
+| `data/tool_level.csv`, `data/source_level.csv`, `data/gap_tests.json` | Inputs and results of the tests of the differences between global and Indian developers (Section 4.4, Table 4.6) and between tools in routine use and other tools (Section 4.4). |
 | `data/strategic_sources.csv` | Source-level coding used for the selective-disclosure test (Section 4.5, Figure 4.3). |
 | `scripts/` | Scoring and analysis scripts: element identification (`elements.py`, `run_elements.py`), the two-step scoring rule (`apply_hybrid.py`), analysis (`inputs_from_workbooks.py`, `analysis_v3.py`, `robustness_gap.py`, `strategic_disclosure.py`), results tables (`final_results.py`) and Appendix B (`gen_appendix_b.py`). |
 
