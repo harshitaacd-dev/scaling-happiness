@@ -11,7 +11,7 @@ def table_rows(start, end):
     return [[c.strip() for c in l.strip().strip('|').split('|')] for l in seg.split('\n')
             if l.startswith('|') and not l.startswith('|:')]
 
-t42 = table_rows('<!--LANDSCAPE_START-->', 'Table: Table 4.2')
+t42 = table_rows('| Tool | Developer |', 'Table: Table 4.2')
 t43 = table_rows('<!--MATRIX-->', 'Table: Table B.1')
 items = t43[0][1:30]
 T42 = {r[0]: dict(zip(t42[0], r)) for r in t42[1:] if not r[0].startswith('**')}
